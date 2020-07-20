@@ -44,9 +44,11 @@
                 <p>
                     <label for="2-medicines">薬品名</label>
                     <ul>
-                        <li v-for="n in answer.medicines.length + 1">
-                            <input type="text" v-bind:id="'2-medicines-' + (n - 1).toString" v-bind:name="'2-medicines-' + (n-0).toString" v-model="">
-
+                        <li v-for="n in answer.medicines.length + 1" v-bind:key="n">
+                            <input type="text" v-on:input="deleteEmptyProp(n - 1)" v-bind:id="'2-medicines-' + (n - 1).toString" v-bind:name="'2-medicines-' + (n-0).toString" v-model="answer.medicines[n - 1]">
+                        </li>
+                    </ul>
+                </p>
             </div>
             <div v-show="$route.query.page == 3">
                 <p><label>次の質問にお答え下さい。</label></p>
@@ -66,7 +68,7 @@
 </template>
 <script>
 export default {
-    name: 'Quiestionnaire',
+    name: 'Questionnaire',
     data: function() {
         return{
             answer: {
@@ -86,6 +88,11 @@ export default {
                     break;
             }
             this.$router.push({ query: { page: moveTo } });
+        },
+        deleteEmptyProp(index) {
+            if (this.answer.medicines[index] == "") {
+                this.answer.medicines = this.answer.medicines.filter(n => n !== "");
+            }
         }
     }
 }
