@@ -1,25 +1,25 @@
 <template>
     <div>
         <h1>Store Visit Data</h1>
-        <form>
-            <div v-show="$route.query.page == 1">
-                <label>氏名:</label>
-                <input type="text" id="full_name" name="full_name" placeholder="Yamada Taro" required>
-                <label>年齢:</label>
-                <input type="number" id="age" name="age">
-                <label>性別:</label>
-                <select id="sex" name="sex">
+        <form class="visit_data__form">
+            <div class="visit_data__pagenation" v-show="$route.query.page == 1">
+                <p><label for="full_name">氏名</label></p>
+                <p><input type="text" id="full_name" name="full_name" placeholder="山田 太郎" required>
+                <p><label for="age">年齢</label></p>
+                <p><input type="number" id="age" name="age" min="0" max="150" placeholder="0">歳</p>
+                <p><label for="sex">性別</label></p>
+                <p><select id="sex" name="sex">
                     <option value="male">男性</option>
                     <option value="female">女性</option>
-                </select>
-                <label>職業:</label>
-                <input type="text" id="occupation" name="occupation">
-                <label>身長:</label>
-                <input type="number" id="age" name="age">
-                <label>体重:</label>
-                <input type="number" id="age" name="age">
-                <label>体温:</label>
-                <input type="number" id="age" name="age">
+                </select></p>
+                <p><label for="occupation">職業</label></p>
+                <p><input type="text" id="occupation" name="occupation" placeholder="職業"></p>
+                <p><label for="height">身長</label></p>
+                <p><input type="number" id="height" name="height" min="0" max="250" placeholder="0">cm</p>
+                <p><label for="weight">体重</label></p>
+                <p><input type="number" id="weight" name="weight" min="0" max="300" placeholder="0">kg</p>
+                <p><label for="temp">体温</label></p>
+                <p><input type="number" id="temp" name="temp" min="30" max="50" placeholder="0" @keydown.enter="movePage('forward')">℃</p>
             </div>
             <div v-show="$route.query.page == 2">
                 <p>
@@ -120,10 +120,89 @@
                     <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-0" value="0"><label for="3-stomach-ache-by-laxative-0">なし</label></li>
                     <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-1" value="1"><label for="3-stomach-ache-by-laxative-1">あり</label></li>
                 </ul>
+                <p>尿</p>
+                <p><label for="3-urine-frequency">頻度</label><input type="number" id="3-urine-frequency" name="3-urine-frequency">回／日</p>
+                <p><label for="3-urine-nightly">夜寝てからトイレに起きる</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-0" value="0"><label for="3-urine-nightly-0">なし</label></li>
+                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-1" value="1"><label for="3-urine-nightly-1">あり</label></li>
+                </ul>
+                <p>月経</p>
+                <p><label for="3-menstruation">月経</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation" id="3-menstruation-0" value="0"><label for="3-menstruation-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation" id="3-menstruation-1" value="1"><label for="3-menstruation-1">あり</label></li>
+                </ul>
+                <p><label for="3-menstruation-first">初潮</label></p>
+                <p><input type="number" name="3-menstruation-first" id="3-menstruation-first">歳</p>
+                <p><label for="3-menstruation-close">閉経</label></p>
+                <p><input type="number" name="3-menstruation-close" id="3-menstruation-close">歳</p>
+                <p><label for="3-menstruation-last">最終月経</label></p>
+                <p><input type="date" name="3-mestruation-last" id="3-menstruation-last-date">から<input type="number" name="3-menstruation-last" id="3-menstruation-last-period">日間</p>
+                <p><label for="3-menstruation-frequency">月経周期</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-0" value="0"><label for="3-menstruation-frequency-0">順調</label>
+                        <ul>
+                            <li><input type="number" name="3-menstruation-frequency-day" id="3-menstruation-frequency-day">日間</li>
+                        </ul>
+                    </li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-1" value="1"><label for="3-menstruation-frequency-1">遅れる</label></li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-2" value="2"><label for="3-menstruation-frequency-2">早まる</label></li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-3" value="3"><label for="3-menstruation-frequency-3">一定しない</label></li>
+                </ul>
+                <p><label for="3-menstruation-period">月経周期</label></p>
+                <p><input type="number" name="3-menstruation-period" id="3-menstruation-period">日間</p>
+                <p><label for="3-menstruation-pain">月経痛</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-0" value="0"><label for="3-menstruation-pain-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-1" value="1"><label for="3-menstruation-pain-1">月経前</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-2" value="2"><label for="3-menstruation-pain-2">前半</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-3" value="3"><label for="3-menstruation-pain-3">後半</label></li>
+                </ul>
+                <p><label for="3-menstruation-painkiller">鎮痛剤</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-0" value="0"><label for="3-menstruation-painkiller-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-1" value="1"><label for="3-menstruation-painkiller-1">あり</label></li>
+                </ul>
+                <p><label for="3-menstruation-amount">月経量</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-0" value="0"><label for="3-menstruation-amount-0">普通</label></li>
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-1" value="1"><label for="3-menstruation-amount-1">少ない</label></li>
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-2" value="2"><label for="3-menstruation-amount-2">多い</label></li>
+                </ul>
+                <p><label for="3-menstruation-upset">月経周期に関連した不調</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-0" value="0"><label for="3-menstruation-upset-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-1" value="1"><label for="3-menstruation-upset-1">月経前</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-2" value="2"><label for="3-menstruation-upset-2">月経中</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-3" value="2"><label for="3-menstruation-upset-3">その他の時期</label></li>
+                </ul>
+                <p><label for="3-menstruation-bleed">不正出血</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-0" value="0"><label for="3-menstruation-bleed-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-1" value="1"><label for="3-menstruation-bleed-1">あり</label></li>
+                </ul>
+                <p><label for="3-menstruation-drop">帯下</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-0" value="0"><label for="3-menstruation-drop-0">普通</label></li>
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-1" value="1"><label for="3-menstruation-drop-1">少ない</label></li>
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-2" value="2"><label for="3-menstruation-drop-2">多い</label></li>
+                </ul>
+                <p>妊娠・出産歴</p>
+                <p><label for="3-pregnancy-count">妊娠経験</label></p>
+                <p><input type="number" name="3-pregnancy-count" id="3-pregrancy-count">回</p>
+                <p><label for="3-pregnancy-birth">出産</label></p>
+                <p><input type="number" name="3-pregrancy-birth" id="3-pregnancy-birth">回</p>
+                <p><label for="3-pregnancy-abortion">自然流産</label></p>
+                <p><input type="number" name="3-pregnancy-abortion" id="3-pregnancy-abortion">回</p>
+                <p><label for="3-pregnancy-artificial-abortion">人工流産</label></p>
+                <p><input type="number" name="3-pregnancy-artificial-abortion" id="3-pregnancy-artificial-abortion">回</p>
             </div>
         </form>
-        <button type="button" v-if="$route.query.page > 1" v-on:click="movePage('back')">前へ</button>
-        <button type="button" v-on:click="movePage('forward')">次へ</button>
+        <div class="visit_data__navigator">
+            <button type="button" v-if="$route.query.page > 1" v-on:click="movePage('back')">前へ</button>
+            <button type="button" v-on:click="movePage('forward')">次へ</button>
+        </div>
     </div>
 </template>
 <script>
@@ -157,3 +236,63 @@ export default {
     }
 }
 </script>
+<style scoped>
+h1 {
+    text-align: center;
+}
+.visit_data__form {
+    width: 30%;
+    min-width: 500px;
+    margin: 0 auto;
+}
+.visit_data__form > div > p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visit_data__form label {
+    display: block;
+    padding: 1.6em 0 0 0;
+    margin: 0 5px;
+    width: calc(100% - 10px)
+}
+.visit_data__form input,
+.visit_data__form select,
+.visit_data__form textarea {
+    font-size: 2rem;
+    padding: 0.5em;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+    min-width: 30%;
+}
+.visit_data__form input[type=number] {
+    -moz-appearance: textfield;
+}
+.visit_data__form ul {
+    padding: 0;
+    
+}
+.visit_data__form li {
+    display: block;
+}
+.visit_data__navigator {
+    display: flex;
+    width: 30%;
+    min-width: 500px;
+    margin: 2rem auto;
+    justify-content: center;
+}
+.visit_data__navigator button {
+    font-size: 2rem;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 0 5px;
+}
+</style>

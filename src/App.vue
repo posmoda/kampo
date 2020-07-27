@@ -14,12 +14,10 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./css/normalize.css";
+html {
+    font-size: 10px;
+    font-family: YuGothic, "Yu Gothic", "ヒラギノ角ゴ ProN", "メイリオ", sans-serif;
+    font-weight: 400;
 }
 </style>
