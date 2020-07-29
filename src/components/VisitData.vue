@@ -34,21 +34,21 @@
                 <p>
                     <textarea id="2-history_of_the_confusing_things"></textarea>
                 </p>
-                <p>
-                    <label for="2-other_hospital">現在、他の医療機関におかかりですか</label>
-                </p>
+                <p class="visit_data__head_question">現在、他の医療機関におかかりですか</p>
                 <p>
                     <label for="2-diagnosis">診断名</label>
+                </p>
+                <p>
                     <input type="text" id="2-diagnosis" name="2-diagnosis">
                 </p>
                 <p>
                     <label for="2-medicines">薬品名</label>
-                    <ul>
-                        <li v-for="n in answer.medicines.length + 1" v-bind:key="n">
-                            <input type="text" v-on:input="deleteEmptyProp('answer.medicines', n - 1)" v-bind:id="'2-medicines-' + (n - 1).toString" v-bind:name="'2-medicines-' + (n-0).toString" v-model="answer.medicines[n - 1]">
-                        </li>
-                    </ul>
                 </p>
+                <ul>
+                    <li v-for="n in answer.medicines.length + 1" v-bind:key="n">
+                        <input type="text" v-on:input="deleteEmptyProp('answer.medicines', n - 1)" v-bind:id="'2-medicines-' + (n - 1).toString" v-bind:name="'2-medicines-' + (n-0).toString" v-model="answer.medicines[n - 1]">
+                    </li>
+                </ul>
             </div>
             <div v-show="$route.query.page == 3">
                 <p>次の質問にお答え下さい。</p>
@@ -276,7 +276,11 @@ h1 {
 }
 .visit_data__form ul {
     padding: 0;
-    
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 .visit_data__form li {
     display: block;
