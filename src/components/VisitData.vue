@@ -281,9 +281,16 @@ h1 {
     margin: 0;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
 .visit_data__form li {
     display: block;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.visit_data__form li > * {
+    width: calc(100% - 33px);
 }
 .visit_data__navigator {
     display: flex;
