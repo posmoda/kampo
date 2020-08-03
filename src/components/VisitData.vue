@@ -273,24 +273,30 @@ h1 {
 }
 .visit_data__form input[type=number] {
     -moz-appearance: textfield;
+    text-align: right;
 }
 .visit_data__form ul {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
 }
 .visit_data__form li {
     display: block;
-    margin: 0;
-    width: 100%;
+    margin: 5px 0;
+    width: calc(100% / 2);
     overflow: hidden;
 }
 .visit_data__form li > * {
     width: calc(100% - 33px);
+}
+.visit_data__form > div > p.visit_data__head_question {
+    margin-top: 2em;
+    margin-bottom: -1em;
 }
 .visit_data__navigator {
     display: flex;
