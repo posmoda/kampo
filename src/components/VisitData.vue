@@ -51,8 +51,7 @@
                 </ul>
             </div>
             <div v-show="$route.query.page == 3">
-                <p>次の質問にお答え下さい。</p>
-                <p>食欲:</p>
+                <p><label for="3-appetite">食欲</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-appetite" id="3-appetite-0" value="0"><label for="3-appetite-0">良い</label></li>
                     <li><input type="radio" name="3-appetite" id="3-appetite-1" value="1"><label for="3-appetite-1">普通</label></li>
@@ -63,7 +62,7 @@
 
                     <li><input type="radio" name="3-appetite" id="3-appetite-4" value="4"><label for="3-appetite-4">自分で制限している</label></li>
                 </ul>
-                <p>睡眠：</p>
+                <p>睡眠</p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-sleep" id="3-sleep-0" value="0"><label for="3-sleep-0">良い</label></li>
                     <li><input type="radio" name="3-sleep" id="3-sleep-1" value="1"><label for="3-sleep-1">寝つきが悪い</label></li>
@@ -71,7 +70,7 @@
                     <li><input type="radio" name="3-sleep" id="3-sleep-3" value="3"><label for="3-sleep-3">よく目がさめる</label></li>
                     <li><input type="radio" name="3-sleep" id="3-sleep-4" value="4"><label for="3-sleep-4">よく夢を見る</label></li>
                 </ul>
-                <p>便：</p>
+                <p>便</p>
                 <p><label for="3-stool-a-day">頻度:</label><input type="number" id="3-stool-a-day" name="3-stool-a-day">回／日</p>
                 <p><label for="3-bowel-movement">便通：</label></p>
                 <ul class="visit_data__radio_box">
@@ -297,6 +296,47 @@ h1 {
 .visit_data__form > div > p.visit_data__head_question {
     margin-top: 2em;
     margin-bottom: -1em;
+}
+ul.visit_data__radio_box {
+    display: flex;   
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 50px;
+    z-index: 0;
+    position: relative;
+}
+ul.visit_data__radio_box li {
+    position: relative;
+    height: 100%;
+    border-right: 2px solid black;
+}
+ul.visit_data__radio_box li:last-child {
+    border-right: none;
+}
+ul.visit_data__radio_box li label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 4px );
+    height: calc(100% - 4px );
+    z-index: 0;
+    font-size: 1.3rem;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: white;
+}
+ul.visit_data__radio_box li input {
+    z-index: -1;
+}
+ul.visit_data__radio_box input:checked + label {
+    color: white;
+    background-color: black;
 }
 .visit_data__navigator {
     display: flex;
