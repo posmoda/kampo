@@ -62,7 +62,7 @@
 
                     <li><input type="radio" name="3-appetite" id="3-appetite-4" value="4"><label for="3-appetite-4">自分で制限している</label></li>
                 </ul>
-                <p>睡眠</p>
+                <p><label for="3-sleep">睡眠</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-sleep" id="3-sleep-0" value="0"><label for="3-sleep-0">良い</label></li>
                     <li><input type="radio" name="3-sleep" id="3-sleep-1" value="1"><label for="3-sleep-1">寝つきが悪い</label></li>
@@ -70,9 +70,10 @@
                     <li><input type="radio" name="3-sleep" id="3-sleep-3" value="3"><label for="3-sleep-3">よく目がさめる</label></li>
                     <li><input type="radio" name="3-sleep" id="3-sleep-4" value="4"><label for="3-sleep-4">よく夢を見る</label></li>
                 </ul>
-                <p>便</p>
-                <p><label for="3-stool-a-day">頻度:</label><input type="number" id="3-stool-a-day" name="3-stool-a-day">回／日</p>
-                <p><label for="3-bowel-movement">便通：</label></p>
+                <p class="visit_data__head_question">便</p>
+                <p><label for="3-stool-a-day">頻度</label></p>
+                <p><input type="number" id="3-stool-a-day" name="3-stool-a-day">回／日</p>
+                <p><label for="3-bowel-movement">便通</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-0" value="0"><label for="3-bowel-movement-0">普通</label></li>
                     <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-1" value="1"><label for="3-bowel-movement-1">便秘</label></li>
@@ -89,44 +90,45 @@
                     <li><input type="radio" name="3-stool-condition" id="3-stool-condition-5" value="5"><label for="3-stool-condition-5">コロコロ便</label></li>
                     <li><input type="radio" name="3-stool-condition" id="3-stool-condition-6" value="6"><label for="3-stool-condition-6">硬くはないがすっきりしない</label></li>
                 </ul>
-                <p><label for="3-remaining-flight">残便感：</label></p>
+                <p><label for="3-remaining-flight">残便感</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-0" value="0"><label for="3-remaining-flight-0">なし</label></li>
                     <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-1" value="1"><label for="3-remaining-flight-1">あり</label></li>
                 </ul>
-                <p><label for="3-stomach-ache">腹痛：</label></p>
+                <p><label for="3-stomach-ache">腹痛</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-0" value="0"><label for="3-stomach-ache-0">なし</label></li>
                     <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-1" value="1"><label for="3-stomach-ache-1">あり</label></li>
                 </ul>
-                <p><label for="3-upset">腹のはり：</label></p>
+                <p><label for="3-upset">腹のはり</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-upset" id="3-upset-0" value="0"><label for="3-upset-0">なし</label></li>
                     <li><input type="radio" name="3-upset" id="3-upset-1" value="1"><label for="3-upset-1">あり</label></li>
                 </ul>
-                <p><label for="3-stomach-gas">腹にガスがたまる：</label></p>
+                <p><label for="3-stomach-gas">腹にガスがたまる</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-0" value="0"><label for="3-stomach-gas-0">なし</label></li>
                     <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-1" value="1"><label for="3-stomach-gas-1">あり</label></li>
                 </ul>
-                <p><label for="3-laxative">下剤の服用：</label></p>
+                <p><label for="3-laxative">下剤の服用</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-laxative" id="3-laxative-0" value="0"><label for="3-laxative-0">なし</label></li>
                     <li><input type="radio" name="3-laxative" id="3-laxative-1" value="1"><label for="3-laxative-1">あり</label></li>
                 </ul>
-                <p><label for="3-stomach-ache-by-laxative">下剤での腹痛：</label></p>
+                <p><label for="3-stomach-ache-by-laxative">下剤での腹痛</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-0" value="0"><label for="3-stomach-ache-by-laxative-0">なし</label></li>
                     <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-1" value="1"><label for="3-stomach-ache-by-laxative-1">あり</label></li>
                 </ul>
-                <p>尿</p>
-                <p><label for="3-urine-frequency">頻度</label><input type="number" id="3-urine-frequency" name="3-urine-frequency">回／日</p>
+                <p class="visit_data__head_question">尿</p>
+                <p><label for="3-urine-frequency">頻度</label></p>
+                <p><input type="number" id="3-urine-frequency" name="3-urine-frequency">回／日</p>
                 <p><label for="3-urine-nightly">夜寝てからトイレに起きる</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-0" value="0"><label for="3-urine-nightly-0">なし</label></li>
                     <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-1" value="1"><label for="3-urine-nightly-1">あり</label></li>
                 </ul>
-                <p>月経</p>
+                <p class="visit_data__head_question">月経</p>
                 <p><label for="3-menstruation">月経</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-menstruation" id="3-menstruation-0" value="0"><label for="3-menstruation-0">なし</label></li>
@@ -141,7 +143,7 @@
                 <p><label for="3-menstruation-frequency">月経周期</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-0" value="0"><label for="3-menstruation-frequency-0">順調</label>
-                        <ul>
+                        <ul class="visit_data__sub_list">
                             <li><input type="number" name="3-menstruation-frequency-day" id="3-menstruation-frequency-day">日間</li>
                         </ul>
                     </li>
@@ -187,7 +189,7 @@
                     <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-1" value="1"><label for="3-menstruation-drop-1">少ない</label></li>
                     <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-2" value="2"><label for="3-menstruation-drop-2">多い</label></li>
                 </ul>
-                <p>妊娠・出産歴</p>
+                <p class="visit_data__head_question">妊娠・出産歴</p>
                 <p><label for="3-pregnancy-count">妊娠経験</label></p>
                 <p><input type="number" name="3-pregnancy-count" id="3-pregrancy-count">回</p>
                 <p><label for="3-pregnancy-birth">出産</label></p>
@@ -310,6 +312,7 @@ ul.visit_data__radio_box li {
     position: relative;
     height: 100%;
     border-right: 2px solid black;
+    overflow: visible;
 }
 ul.visit_data__radio_box li:last-child {
     border-right: none;
@@ -337,6 +340,13 @@ ul.visit_data__radio_box li input {
 ul.visit_data__radio_box input:checked + label {
     color: white;
     background-color: black;
+}
+ul.visit_data__sub_list {
+    border: 10px black solid;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    width: 100%;
 }
 .visit_data__navigator {
     display: flex;
