@@ -143,16 +143,15 @@
                 <p><label for="3-menstruation-frequency">月経周期</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-0" value="0"><label for="3-menstruation-frequency-0">順調</label>
-                        <ul class="visit_data__sub_list">
-                            <li><input type="number" name="3-menstruation-frequency-day" id="3-menstruation-frequency-day">日間</li>
-                        </ul>
                     </li>
                     <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-1" value="1"><label for="3-menstruation-frequency-1">遅れる</label></li>
                     <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-2" value="2"><label for="3-menstruation-frequency-2">早まる</label></li>
                     <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-3" value="3"><label for="3-menstruation-frequency-3">一定しない</label></li>
                 </ul>
-                <p><label for="3-menstruation-period">月経周期</label></p>
-                <p><input type="number" name="3-menstruation-period" id="3-menstruation-period">日間</p>
+                <p><label for="3-mestruation-peiod">月経周期</label></p>
+                <p><input type="number" name="3-menstruation-period" id="3-menstruation-frequency-day">日間</p>
+                <p><label for="3-menstruation-length">月経期間</label></p>
+                <p><input type="number" name="3-menstruation-length" id="3-menstruation-length">日間</p>
                 <p><label for="3-menstruation-pain">月経痛</label></p>
                 <ul class="visit_data__radio_box">
                     <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-0" value="0"><label for="3-menstruation-pain-0">なし</label></li>
@@ -198,6 +197,80 @@
                 <p><input type="number" name="3-pregnancy-abortion" id="3-pregnancy-abortion">回</p>
                 <p><label for="3-pregnancy-artificial-abortion">人工流産</label></p>
                 <p><input type="number" name="3-pregnancy-artificial-abortion" id="3-pregnancy-artificial-abortion">回</p>
+            </div>
+            <div v-show="$route.query.page == 4">
+                <p class="visit_data__head_question">現在の症状、普段の体質傾向についてお答えください</p>
+                <table class="visit_data__constitution">
+                    <thead>
+                        <tr><th colspan="2"></th><th>該当しない</th><th>該当する</th><th>著しく該当する</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">暑がり</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">寒がり</th>
+                            <td><input type="radio" name="constitution-samugari" id="constitution-samugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-samugari" id="constitution-samugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-samugari" id="constitution-samugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colsplan="5">冷える</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>全身</th>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
+                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </form>
         <div class="visit_data__navigator">
@@ -254,6 +327,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 .visit_data__form label {
     display: block;
@@ -343,10 +417,8 @@ ul.visit_data__radio_box input:checked + label {
 }
 ul.visit_data__sub_list {
     border: 10px black solid;
-    position: absolute;
-    top: 100%;
-    z-index: 10;
-    width: 100%;
+    margin-top: 0;
+    margin-bottom: 100%;
 }
 .visit_data__navigator {
     display: flex;
