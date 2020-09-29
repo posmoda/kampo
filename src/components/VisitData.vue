@@ -218,57 +218,258 @@
                             <td><input type="radio" name="constitution-samugari" id="constitution-samugari-2" value="2"></td>
                         </tr>
                         <tr>
-                            <th colsplan="5">冷える</th>
+                            <th colspan="5">冷える</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-hieru-zenshin" id="constitution-hieru-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-zenshin" id="constitution-hieru-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-zenshin" id="constitution-hieru-zenshin-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>手</th>
+                            <td><input type="radio" name="constitution-hieru-te" id="constitution-hieru-te-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-te" id="constitution-hieru-te-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-te" id="constitution-hieru-te-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足</th>
+                            <td><input type="radio" name="constitution-hieru-ashi" id="constitution-hieru-ashi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-ashi" id="constitution-hieru-ashi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-ashi" id="constitution-hieru-ashi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腹</th>
+                            <td><input type="radio" name="constitution-hieru-hara" id="constitution-hieru-hara-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-hara" id="constitution-hieru-hara-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-hara" id="constitution-hieru-hara-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腰</th>
+                            <td><input type="radio" name="constitution-hieru-koshi" id="constitution-hieru-koshi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-koshi" id="constitution-hieru-koshi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-koshi" id="constitution-hieru-koshi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>背</th>
+                            <td><input type="radio" name="constitution-hieru-se" id="constitution-hieru-se-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-se" id="constitution-hieru-se-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-se" id="constitution-hieru-se-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-hieru-other" id="constitution-hieru-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hieru-other" id="constitution-hieru-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hieru-other" id="constitution-hieru-other-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">のぼせ</th>
+                            <td><input type="radio" name="constitution-nobose" id="constitution-nobose-0" value="0"></td>
+                            <td><input type="radio" name="constitution-nobose" id="constitution-nobose-1" value="1"></td>
+                            <td><input type="radio" name="constitution-nobose" id="constitution-nobose-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">冷えのぼせ</th>
+                            <td><input type="radio" name="constitution-hienobose" id="constitution-hienobose-0" value="0"></td>
+                            <td><input type="radio" name="constitution-hienobose" id="constitution-hienobose-1" value="1"></td>
+                            <td><input type="radio" name="constitution-hienobose" id="constitution-hienobose-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">疲れやすい</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-tsukare-zenshin" id="constitution-tsukare-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-tsukare-zenshin" id="constitution-tsukare-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-tsukare-zenshin" id="constitution-tsukare-zenshin-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足</th>
+                            <td><input type="radio" name="constitution-tsukare-ashi" id="constitution-tsukare-ashi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-tsukare-ashi" id="constitution-tsukare-ashi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-tsukare-ashi" id="constitution-tsukare-ashi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腕</th>
+                            <td><input type="radio" name="constitution-tsukare-ude" id="constitution-tsukare-ude-0" value="0"></td>
+                            <td><input type="radio" name="constitution-tsukare-ude" id="constitution-tsukare-ude-1" value="1"></td>
+                            <td><input type="radio" name="constitution-tsukare-ude" id="constitution-tsukare-ude-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-tsukare-other" id="constitution-tsukare-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-tsukare-other" id="constitution-tsukare-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-tsukare-other" id="constitution-tsukare-other-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">身体が重い</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-omoi-zenshin" id="constitution-omoi-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-zenshin" id="constitution-omoi-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-zenshin" id="constitution-omoi-zenshin-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腰</th>
+                            <td><input type="radio" name="constitution-omoi-koshi" id="constitution-omoi-koshi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-koshi" id="constitution-omoi-koshi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-koshi" id="constitution-omoi-koshi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>膝</th>
+                            <td><input type="radio" name="constitution-omoi-hiza" id="constitution-omoi-hiza-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-hiza" id="constitution-omoi-hiza-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-hiza" id="constitution-omoi-hiza-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足</th>
+                            <td><input type="radio" name="constitution-omoi-ashi" id="constitution-omoi-ashi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-ashi" id="constitution-omoi-ashi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-ashi" id="constitution-omoi-ashi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腕</th>
+                            <td><input type="radio" name="constitution-omoi-ude" id="constitution-omoi-ude-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-ude" id="constitution-omoi-ude-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-ude" id="constitution-omoi-ude-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-omoi-other" id="constitution-omoi-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-omoi-other" id="constitution-omoi-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-omoi-other" id="constitution-omoi-other-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">だるい</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-darui-zenshin" id="constitution-darui-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-darui-zenshin" id="constitution-darui-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-darui-zenshin" id="constitution-darui-zenshin-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足</th>
+                            <td><input type="radio" name="constitution-darui-ashi" id="constitution-darui-ashi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-darui-ashi" id="constitution-darui-ashi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-darui-ashi" id="constitution-darui-ashi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腕</th>
+                            <td><input type="radio" name="constitution-darui-ude" id="constitution-darui-ude-0" value="0"></td>
+                            <td><input type="radio" name="constitution-darui-ude" id="constitution-darui-ude-1" value="1"></td>
+                            <td><input type="radio" name="constitution-darui-ude" id="constitution-darui-ude-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-darui-other" id="constitution-darui-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-darui-other" id="constitution-darui-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-darui-other" id="constitution-darui-other-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">力が入らない</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-chikara-zenshin" id="constitution-chikara-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-zenshin" id="constitution-chikara-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-zenshin" id="constitution-chikara-zenshin-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腰</th>
+                            <td><input type="radio" name="constitution-chikara-koshi" id="constitution-chikara-koshi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-koshi" id="constitution-chikara-koshi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-koshi" id="constitution-chikara-koshi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>膝</th>
+                            <td><input type="radio" name="constitution-chikara-hiza" id="constitution-chikara-hiza-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-hiza" id="constitution-chikara-hiza-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-hiza" id="constitution-chikara-hiza-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足</th>
+                            <td><input type="radio" name="constitution-chikara-ashi" id="constitution-chikara-ashi-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-ashi" id="constitution-chikara-ashi-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-ashi" id="constitution-chikara-ashi-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>腕</th>
+                            <td><input type="radio" name="constitution-chikara-ude" id="constitution-chikara-ude-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-ude" id="constitution-chikara-ude-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-ude" id="constitution-chikara-ude-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-chikara-other" id="constitution-chikara-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-chikara-other" id="constitution-chikara-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-chikara-other" id="constitution-chikara-other-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">汗をかきやすい</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <td><input type="radio" name="constitution-ase-zenshin" id="constitution-ase-zenshin-0" value="0"></td>
+                            <td><input type="radio" name="constitution-ase-zenshin" id="constitution-ase-zenshin-1" value="1"></td>
+                            <td><input type="radio" name="constitution-ase-zenshin" id="constitution-ase-zenshin-2" value="2"></td>
                         </tr>
                         <tr>
                             <th></th>
-                            <th>全身</th>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-0" value="0"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-1" value="1"></td>
-                            <td><input type="radio" name="constitution-atsugari" id="constitution-atsugari-2" value="2"></td>
+                            <th>頭</th>
+                            <td><input type="radio" name="constitution-ase-atama" id="constitution-ase-atama-0" value="0"></td>
+                            <td><input type="radio" name="constitution-ase-atama" id="constitution-ase-atama-1" value="1"></td>
+                            <td><input type="radio" name="constitution-ase-atama" id="constitution-ase-atama-2" value="2"></td>
                         </tr>
+                        <tr>
+                            <th></th>
+                            <th>手のひら</th>
+                            <td><input type="radio" name="constitution-ase-tenohira" id="constitution-ase-tenohira-0" value="0"></td>
+                            <td><input type="radio" name="constitution-ase-tenohira" id="constitution-ase-tenohira-1" value="1"></td>
+                            <td><input type="radio" name="constitution-ase-tenohira" id="constitution-ase-tenohira-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>足の裏</th>
+                            <td><input type="radio" name="constitution-ase-ashinoura" id="constitution-ase-ashinoura-0" value="0"></td>
+                            <td><input type="radio" name="constitution-ase-ashinoura" id="constitution-ase-ashinoura-1" value="1"></td>
+                            <td><input type="radio" name="constitution-ase-ashinoura" id="constitution-ase-ashinoura-2" value="2"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>その他の部位</th>
+                            <td><input type="radio" name="constitution-ase-other" id="constitution-ase-other-0" value="0"></td>
+                            <td><input type="radio" name="constitution-ase-other" id="constitution-ase-other-1" value="1"></td>
+                            <td><input type="radio" name="constitution-ase-other" id="constitution-ase-other-2" value="2"></td>
                     </tbody>
                 </table>
             </div>
