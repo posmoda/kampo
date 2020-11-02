@@ -2363,7 +2363,7 @@
         <div class="visit_data__navigator">
             <button type="button" v-if="$route.query.page > 1" v-on:click="movePage('back')">前へ</button>
             <button type="button" v-if="$route.query.page < 7" v-on:click="movePage('forward')">次へ</button>
-            <button type="button" v-if="$route.query.page == 7">登録完了</button>
+            <button type="button" v-if="$route.query.page == 7" @click="$router.push('/')">登録完了</button>
         </div>
     </div>
 </template>
