@@ -2174,64 +2174,196 @@
                     <label for="5-father-grandfather">病名</label>
                     <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
                 </p>
-                <p><label for="5-father-grandfather">父方の祖母</label></p>
+                <p><label for="5-father-grandmother">父方の祖母</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-0" value="0"><label for="5-father-grandfather-0">健康</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-1" value="1"><label for="5-father-grandfather-1">病気</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-2" value="2"><label for="5-father-grandfather-2">死亡</label></li>
+                    <li><input type="radio" name="5-father-grandmother" id="5-father-grandmother-0" value="0"><label for="5-father-grandmother-0">健康</label></li>
+                    <li><input type="radio" name="5-father-grandmother" id="5-father-grandmother-1" value="1"><label for="5-father-grandmother-1">病気</label></li>
+                    <li><input type="radio" name="5-father-grandmother" id="5-father-grandmother-2" value="2"><label for="5-father-grandmother-2">死亡</label></li>
                 </ul>
                 <p class="family_disease">
-                    <label for="5-father-grandfather">病名</label>
-                    <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
+                    <label for="5-father-grandmother">病名</label>
+                    <textarea id="5-father-grandmother-disease" name="5-father-grandmother-disease"></textarea>
                 </p>
-                <p><label for="5-father-grandfather">母方の祖父</label></p>
+                <p><label for="5-mother-grandfather">母方の祖父</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-0" value="0"><label for="5-father-grandfather-0">健康</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-1" value="1"><label for="5-father-grandfather-1">病気</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-2" value="2"><label for="5-father-grandfather-2">死亡</label></li>
+                    <li><input type="radio" name="5-mother-grandfather" id="5-mother-grandfather-0" value="0"><label for="5-mother-grandfather-0">健康</label></li>
+                    <li><input type="radio" name="5-mother-grandfather" id="5-mother-grandfather-1" value="1"><label for="5-mother-grandfather-1">病気</label></li>
+                    <li><input type="radio" name="5-mother-grandfather" id="5-mother-grandfather-2" value="2"><label for="5-mother-grandfather-2">死亡</label></li>
                 </ul>
                 <p class="family_disease">
-                    <label for="5-father-grandfather">病名</label>
-                    <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
+                    <label for="5-mother-grandfather">病名</label>
+                    <textarea id="5-mother-grandfather-disease" name="5-mother-grandfather-disease"></textarea>
                 </p>
-                <p><label for="5-father-grandfather">母方の祖母</label></p>
+                <p><label for="5-mother-grandmother">母方の祖母</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-0" value="0"><label for="5-father-grandfather-0">健康</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-1" value="1"><label for="5-father-grandfather-1">病気</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-2" value="2"><label for="5-father-grandfather-2">死亡</label></li>
+                    <li><input type="radio" name="5-mother-grandmother" id="5-mother-grandmother-0" value="0"><label for="5-mother-grandmother-0">健康</label></li>
+                    <li><input type="radio" name="5-mother-grandmother" id="5-mother-grandmother-1" value="1"><label for="5-mother-grandmother-1">病気</label></li>
+                    <li><input type="radio" name="5-mother-grandmother" id="5-mother-grandmother-2" value="2"><label for="5-mother-grandmother-2">死亡</label></li>
                 </ul>
                 <p class="family_disease">
-                    <label for="5-father-grandfather">病名</label>
-                    <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
+                    <label for="5-mother-grandmother">病名</label>
+                    <textarea id="5-mother-grandmother-disease" name="5-mother-grandmother-disease"></textarea>
                 </p>
-                <p><label for="5-father-grandfather">父</label></p>
+                <p><label for="5-father">父</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-0" value="0"><label for="5-father-grandfather-0">健康</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-1" value="1"><label for="5-father-grandfather-1">病気</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-2" value="2"><label for="5-father-grandfather-2">死亡</label></li>
+                    <li><input type="radio" name="5-father" id="5-father-0" value="0"><label for="5-father-0">健康</label></li>
+                    <li><input type="radio" name="5-father" id="5-father-1" value="1"><label for="5-father-1">病気</label></li>
+                    <li><input type="radio" name="5-father" id="5-father-2" value="2"><label for="5-father-2">死亡</label></li>
                 </ul>
                 <p class="family_disease">
-                    <label for="5-father-grandfather">病名</label>
-                    <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
+                    <label for="5-father">病名</label>
+                    <textarea id="5-father-disease" name="5-father-disease"></textarea>
                 </p>
-                <p><label for="5-father-grandfather">母</label></p>
+                <p><label for="5-mother">母</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-0" value="0"><label for="5-father-grandfather-0">健康</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-1" value="1"><label for="5-father-grandfather-1">病気</label></li>
-                    <li><input type="radio" name="5-father-grandfather" id="5-father-grandfather-2" value="2"><label for="5-father-grandfather-2">死亡</label></li>
+                    <li><input type="radio" name="5-mother" id="5-mother-0" value="0"><label for="5-mother-0">健康</label></li>
+                    <li><input type="radio" name="5-mother" id="5-mother-1" value="1"><label for="5-mother-1">病気</label></li>
+                    <li><input type="radio" name="5-mother" id="5-mother-2" value="2"><label for="5-mother-2">死亡</label></li>
                 </ul>
                 <p class="family_disease">
-                    <label for="5-father-grandfather">病名</label>
-                    <textarea id="5-father-grandfather-disease" name="5-father-grandfather-disease"></textarea>
+                    <label for="5-mother">病名</label>
+                    <textarea id="5-mother-disease" name="5-mother-disease"></textarea>
                 </p>
- 
- 
+                <p>
+                    <label class="select_family" for="5-sibling">
+                        <select class="select_family" name="5-sibling">
+                            <option value="elderbrother">兄</option>
+                            <option value="yongerbrohter">弟</option>
+                            <option value="eldersister">姉</option>
+                            <option value="youngersister">妹</option>
+                        </select>
+                    </label>
+                </p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="5-sibling" id="5-sibling-0" value="0"><label for="5-sibling-0">健康</label></li>
+                    <li><input type="radio" name="5-sibling" id="5-sibling-1" value="1"><label for="5-sibling-1">病気</label></li>
+                    <li><input type="radio" name="5-sibling" id="5-sibling-2" value="2"><label for="5-sibling-2">死亡</label></li>
+                </ul>
+                <p class="family_disease">
+                    <label for="5-sibling">病名</label>
+                    <textarea id="5-sibling-disease" name="5-sibling-disease"></textarea>
+                </p>
+                <p><label for="5-partner">配偶者</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="5-partner" id="5-partner-0" value="0"><label for="5-partner-0">健康</label></li>
+                    <li><input type="radio" name="5-partner" id="5-partner-1" value="1"><label for="5-partner-1">病気</label></li>
+                    <li><input type="radio" name="5-partner" id="5-partner-2" value="2"><label for="5-partner-2">死亡</label></li>
+                </ul>
+                <p class="family_disease">
+                    <label for="5-partner">病名</label>
+                    <textarea id="5-partner-disease" name="5-partner-disease"></textarea>
+                </p>
+                <p>
+                    <label class="select_family" for="5-child">
+                        <select class="select_family" name="5-child">
+                            <option value="son">息子</option>
+                            <option value="daughter">娘</option>
+                        </select>
+                    </label>
+                </p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="5-child" id="5-child-0" value="0"><label for="5-child-0">健康</label></li>
+                    <li><input type="radio" name="5-child" id="5-child-1" value="1"><label for="5-child-1">病気</label></li>
+                    <li><input type="radio" name="5-child" id="5-child-2" value="2"><label for="5-child-2">死亡</label></li>
+                </ul>
+                <p class="family_disease">
+                    <label for="5-child">病名</label>
+                    <textarea id="5-child-disease" name="5-child-disease"></textarea>
+                </p>
+                <p>
+                    <label class="select_family" for="5-othermember">
+                        <select class="select_family" name="5-child">
+                            <option value="man">そのほかの同居者（男性）</option>
+                            <option value="woman">そのほかの同居者（女性）</option>
+                        </select>
+                    </label>
+                </p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="5-othermember" id="5-othermember-0" value="0"><label for="5-othermember-0">健康</label></li>
+                    <li><input type="radio" name="5-othermember" id="5-othermember-1" value="1"><label for="5-othermember-1">病気</label></li>
+                    <li><input type="radio" name="5-othermember" id="5-othermember-2" value="2"><label for="5-othermember-2">死亡</label></li>
+                </ul>
+                <p class="family_disease">
+                    <label for="5-othermember">病名</label>
+                    <textarea id="5-othermember-disease" name="5-othermember-disease"></textarea>
+                </p>
 			</div>
-
+            <div v-show="$route.query.page == 6">
+                <p class="visit_data__head_question">生活習慣についてお聞きします。</p>
+                <p><label for="6-drinkhistory">飲酒歴</label></p>
+                <p class="inner-caption"><label for="6-drinkhistory-begin">開始年齢</label><input type="number" name="6-drinkhistory" id="6-drinkhistory-begin">歳</p>
+                <p class="inner-caption"><label for="6-drinkhistory-end">中止年齢</label><input type="number" name="6-drinkhistory" id="6-drinkhistory-end">歳</p>
+                <p><label for="6-drinkhistory-past">過去の飲酒歴</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="6-drinkhistory-past" id="6-drinkhistory-past-0" value="0"><label for="6-drinkhistory-past-0">なし</label></li>
+                    <li><input type="radio" name="6-drinkhistory-past" id="6-drinkhistory-past-1" value="1"><label for="6-drinkhistory-past-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="6-drinkhistory-past-amount">飲酒量</label><input type="number" name="6-drinkhistory-past-amount" id="6-drinkhistory-past-amount">合／日</p>
+                <p><label for="6-drinkhistory-current">現在の飲酒歴</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="6-drinkhistory-current" id="6-drinkhistory-current-0" value="0"><label for="6-drinkhistory-current-0">なし</label></li>
+                    <li><input type="radio" name="6-drinkhistory-current" id="6-drinkhistory-current-1" value="1"><label for="6-drinkhistory-current-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="6-drinkhistory-current-amount">飲酒量</label><input type="number" name="6-drinkhistory-current-amount" id="6-drinkhistory-current-amount">合／日</p>
+                <p><label for="6-smokinghistory">喫煙歴</label></p>
+                <p class="inner-caption"><label for="6-smokinghistory-begin">開始年齢</label><input type="number" name="6-smokinghistory" id="6-smokinghistory-begin">歳</p>
+                <p class="inner-caption"><label for="6-smokinghistory-end">中止年齢</label><input type="number" name="6-smokinghistory" id="6-smokinghistory-end">歳</p>
+                <p><label for="6-smokinghistory-past">過去の喫煙歴</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="6-smokinghistory-past" id="6-smokinghistory-past-0" value="0"><label for="6-smokinghistory-past-0">なし</label></li>
+                    <li><input type="radio" name="6-smokinghistory-past" id="6-smokinghistory-past-1" value="1"><label for="6-smokinghistory-past-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="6-smokinghistory-past-amount">喫煙量</label><input type="number" name="6-smokinghistory-past-amount" id="6-smokinghistory-past-amount">合／日</p>
+                <p><label for="6-smokinghistory-current">現在の喫煙歴</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="6-smokinghistory-current" id="6-smokinghistory-current-0" value="0"><label for="6-smokinghistory-current-0">なし</label></li>
+                    <li><input type="radio" name="6-smokinghistory-current" id="6-smokinghistory-current-1" value="1"><label for="6-smokinghistory-current-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="6-smokinghistory-current-amount">喫煙量</label><input type="number" name="6-smokinghistory-current-amount" id="6-smokinghistory-current-amount">合／日</p>
+                <p><label for="6-preference">嗜好</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="checkbox" name="6-preference" id="6-preference-1" value="1"><label for="6-preference-1">甘いもの好き</label></li>
+                    <li><input type="checkbox" name="6-preference" id="6-preference-2" value="2"><label for="6-preference-2">辛いもの好き</label></li>
+                    <li><input type="checkbox" name="6-preference" id="6-preference-3" value="3"><label for="6-preference-3">塩辛いもの好き</label></li>
+                    <li><input type="checkbox" name="6-preference" id="6-preference-4" value="4"><label for="6-preference-4">肉が好き</label></li>
+                </ul>
+            </div>
+            <div v-show="$route.query.page == 7">
+                <p class="visit_data__head_question">今までにかかった病気などについてお聞きします。</p>
+                <p><label for="7-hospitalization">入院歴</label></p>
+                <p><input type="number" name="7-hospitalization-age" id="7-hospitalization-age">歳ごろ</p>
+                <p class="inner-caption"><label for="7-hospitalization-disease">病名</label><input type="text" name="7-hospitalization-disease" id="7-hospitalization-disease"></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="7-hospitalization-ope" id="7-hospitalization-ope-0" value="0"><label for="7-hospitalization-ope-0">手術なし</label></li>
+                    <li><input type="radio" name="7-hospitalization-ope" id="7-hospitalization-ope-1" value="1"><label for="7-hospitalization-ope-1">手術あり</label></li>
+                </ul>
+                <p><label for="7-outpatient">通院歴</label></p>
+                <p><input type="number" name="7-outpatient-age" id="7-outpatient-age">歳ごろ</p>
+                <p class="inner-caption"><label for="7-outpatient-disease">病名</label><input type="text" name="7-outpatient-disease" id="7-outpatient-disease"></p>
+                <p><label for="7-transfusion">輸血歴</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="7-transfusion" id="7-transfusion-0" value="0"><label for="7-transfusion-0">なし</label></li>
+                    <li><input type="radio" name="7-transfusion" id="7-transfusion-1" value="1"><label for="7-transfusion-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="7-transfusion-age">年齢</label><input type="number" name="7-transfusion-age" id="7-transfusion-age">歳</p>
+                <p><label for="7-jaundice">黄疸</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="7-jaundice" id="7-jaundice-0" value="0"><label for="7-jaundice-0">なし</label></li>
+                    <li><input type="radio" name="7-jaundice" id="7-jaundice-1" value="1"><label for="7-jaundice-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="7-jaundice-age">年齢</label><input type="number" name="7-jaundice-age" id="7-jaundice-age">歳</p>
+                <p><label for="7-medicineallegy">薬物アレルギー</label></p>
+                <ul class="visit_data__radio_box">
+                    <li><input type="radio" name="7-medicineallegy" id="7-medicineallegy-0" value="0"><label for="7-medicineallegy-0">なし</label></li>
+                    <li><input type="radio" name="7-medicineallegy" id="7-medicineallegy-1" value="1"><label for="7-medicineallegy-1">あり</label></li>
+                </ul>
+                <p class="inner-caption"><label for="7-medicineallegy-medicine">薬品名</label><input type="text" name="7-medicineallegy-medicine" id="7-medicineallegy-medicine"></p>
+            </div>
         </form>
         <div class="visit_data__navigator">
             <button type="button" v-if="$route.query.page > 1" v-on:click="movePage('back')">前へ</button>
-            <button type="button" v-on:click="movePage('forward')">次へ</button>
+            <button type="button" v-if="$route.query.page < 7" v-on:click="movePage('forward')">次へ</button>
+            <button type="button" v-if="$route.query.page == 7">登録完了</button>
         </div>
     </div>
 </template>
@@ -2267,6 +2399,9 @@ export default {
 }
 </script>
 <style scoped>
+body {
+    padding-bottom: 100px;
+}
 h1 {
     text-align: center;
 }
@@ -2296,7 +2431,7 @@ h1 {
 .visit_data__form textarea {
     font-size: 2rem;
     padding: 0.5em;
-    margin: 0 5px;
+    margin: 0;
     border-radius: 5px;
     border: 2px solid black;
     width: 100%;
@@ -2378,10 +2513,14 @@ ul.visit_data__sub_list {
 }
 .visit_data__navigator {
     display: flex;
-    width: 30%;
+    width: 100%;
     min-width: 500px;
-    margin: 2rem auto;
+    margin: 0;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 2em 0;
 }
 .visit_data__navigator button {
     font-size: 2rem;
@@ -2459,5 +2598,37 @@ p.family_disease textarea {
     border-top: none;
     margin: 0;
     padding-top: 1.5em;
+}
+select.select_family {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+label.select_family {
+    position: relative;
+}
+label.select_family:after {
+    display: block;
+    content: "▼";
+    position: absolute;
+    pointer-events: none;
+    top: 1.6em;
+    left: 3em;
+}
+p.inner-caption {
+    position: relative;
+}
+p.inner-caption label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
 }
 </style>
