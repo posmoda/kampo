@@ -4,42 +4,42 @@
         <form class="visit_data__form">
             <div class="visit_data__pagenation" v-show="$route.query.page == 1">
                 <p><label for="full_name">氏名</label></p>
-                <p><input type="text" id="full_name" name="full_name" placeholder="山田 太郎" required>
+                <p><input type="text" id="full_name" name="full_name" placeholder="山田 太郎" required v-model="answer.name">
                 <p><label for="age">年齢</label></p>
-                <p><input type="number" id="age" name="age" min="0" max="150" placeholder="0">歳</p>
+                <p><input type="number" id="age" name="age" min="0" max="150" placeholder="0" v-model="answer.age">歳</p>
                 <p><label for="sex">性別</label></p>
-                <p><select id="sex" name="sex">
+                <p><select id="sex" name="sex" v-model="answer.sex">
                     <option value="male">男性</option>
                     <option value="female">女性</option>
                 </select></p>
                 <p><label for="occupation">職業</label></p>
-                <p><input type="text" id="occupation" name="occupation" placeholder="職業"></p>
+                <p><input type="text" id="occupation" name="occupation" placeholder="職業" v-model="answer.occupation"></p>
                 <p><label for="height">身長</label></p>
-                <p><input type="number" id="height" name="height" min="0" max="250" placeholder="0">cm</p>
+                <p><input type="number" id="height" name="height" min="0" max="250" placeholder="0" v-model="answer.height">cm</p>
                 <p><label for="weight">体重</label></p>
-                <p><input type="number" id="weight" name="weight" min="0" max="300" placeholder="0">kg</p>
+                <p><input type="number" id="weight" name="weight" min="0" max="300" placeholder="0" v-model="answer.weight">kg</p>
                 <p><label for="temp">体温</label></p>
-                <p><input type="number" id="temp" name="temp" min="30" max="50" placeholder="0" @keydown.enter="movePage('forward')">℃</p>
+                <p><input type="number" id="temp" name="temp" min="30" max="50" placeholder="0" @keydown.enter="movePage('forward')" v-model="answer.body_temp">℃</p>
             </div>
             <div v-show="$route.query.page == 2">
                 <p>
                     <label for="2-confusing_things">もっともお困りのことは、どのようなことでしょうか</label>
                 </p>
                 <p>
-                    <textarea id="2-confusing_things" name="2-confusing_things"></textarea>
+                    <textarea id="2-confusing_things" name="2-confusing_things" v-model="answer.most_concern"></textarea>
                 </p>
                 <p>
                     <label for="2-history_of_the_confusing_things">それらの病気や症状は、いつから起こり、どのような経過をとっていますか</label>
                 </p>
                 <p>
-                    <textarea id="2-history_of_the_confusing_things"></textarea>
+                    <textarea id="2-history_of_the_confusing_things" v-model="answer.concern_detail"></textarea>
                 </p>
                 <p class="visit_data__head_question">現在、他の医療機関におかかりですか</p>
                 <p>
                     <label for="2-diagnosis">診断名</label>
                 </p>
                 <p>
-                    <input type="text" id="2-diagnosis" name="2-diagnosis">
+                    <input type="text" id="2-diagnosis" name="2-diagnosis" v-model="answer.other_hospital_diagnosis">
                 </p>
                 <p>
                     <label for="2-medicines">薬品名</label>
@@ -53,150 +53,150 @@
             <div v-show="$route.query.page == 3">
                 <p><label for="3-appetite">食欲</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-appetite" id="3-appetite-0" value="0"><label for="3-appetite-0">良い</label></li>
-                    <li><input type="radio" name="3-appetite" id="3-appetite-1" value="1"><label for="3-appetite-1">普通</label></li>
+                    <li><input type="radio" name="3-appetite" id="3-appetite-0" value="0" v-model="answer.appetite"><label for="3-appetite-0">良い</label></li>
+                    <li><input type="radio" name="3-appetite" id="3-appetite-1" value="1" v-model="answer.appetite"><label for="3-appetite-1">普通</label></li>
 
-                    <li><input type="radio" name="3-appetite" id="3-appetite-2" value="2"><label for="3-appetite-2">低下</label></li>
+                    <li><input type="radio" name="3-appetite" id="3-appetite-2" value="2" v-model="answer.appetite"><label for="3-appetite-2">低下</label></li>
 
-                    <li><input type="radio" name="3-appetite" id="3-appetite-3" value="3"><label for="3-appetite-3">ない</label></li>
+                    <li><input type="radio" name="3-appetite" id="3-appetite-3" value="3" v-model="answer.appetite"><label for="3-appetite-3">ない</label></li>
 
-                    <li><input type="radio" name="3-appetite" id="3-appetite-4" value="4"><label for="3-appetite-4">自分で制限している</label></li>
+                    <li><input type="radio" name="3-appetite" id="3-appetite-4" value="4" v-model="answer.appetite"><label for="3-appetite-4">自分で制限している</label></li>
                 </ul>
                 <p><label for="3-sleep">睡眠</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-sleep" id="3-sleep-0" value="0"><label for="3-sleep-0">良い</label></li>
-                    <li><input type="radio" name="3-sleep" id="3-sleep-1" value="1"><label for="3-sleep-1">寝つきが悪い</label></li>
-                    <li><input type="radio" name="3-sleep" id="3-sleep-2" value="2"><label for="3-sleep-2">眠りがあさい</label></li>
-                    <li><input type="radio" name="3-sleep" id="3-sleep-3" value="3"><label for="3-sleep-3">よく目がさめる</label></li>
-                    <li><input type="radio" name="3-sleep" id="3-sleep-4" value="4"><label for="3-sleep-4">よく夢を見る</label></li>
+                    <li><input type="radio" name="3-sleep" id="3-sleep-0" value="0" v-model="answer.sleep"><label for="3-sleep-0">良い</label></li>
+                    <li><input type="radio" name="3-sleep" id="3-sleep-1" value="1" v-model="answer.sleep"><label for="3-sleep-1">寝つきが悪い</label></li>
+                    <li><input type="radio" name="3-sleep" id="3-sleep-2" value="2" v-model="answer.sleep"><label for="3-sleep-2">眠りがあさい</label></li>
+                    <li><input type="radio" name="3-sleep" id="3-sleep-3" value="3" v-model="answer.sleep"><label for="3-sleep-3">よく目がさめる</label></li>
+                    <li><input type="radio" name="3-sleep" id="3-sleep-4" value="4" v-model="answer.sleep"><label for="3-sleep-4">よく夢を見る</label></li>
                 </ul>
                 <p class="visit_data__head_question">便</p>
                 <p><label for="3-stool-a-day">頻度</label></p>
-                <p><input type="number" id="3-stool-a-day" name="3-stool-a-day">回／日</p>
+                <p><input type="number" id="3-stool-a-day" name="3-stool-a-day" v-model="answer.stool_frequency">回／日</p>
                 <p><label for="3-bowel-movement">便通</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-0" value="0"><label for="3-bowel-movement-0">普通</label></li>
-                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-1" value="1"><label for="3-bowel-movement-1">便秘</label></li>
-                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-2" value="2"><label for="3-bowel-movement-2">下痢</label></li>
-                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-3" value="3"><label for="3-bowel-movement-3">下痢と便秘が交互にくる</label></li>
+                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-0" value="0" v-model="answer.bowel_movement"><label for="3-bowel-movement-0">普通</label></li>
+                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-1" value="1" v-model="answer.bowel_movement"><label for="3-bowel-movement-1">便秘</label></li>
+                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-2" value="2" v-model="answer.bowel_movement"><label for="3-bowel-movement-2">下痢</label></li>
+                    <li><input type="radio" name="3-bowel-movement" id="3-bowel-movement-3" value="3" v-model="answer.bowel_movement"><label for="3-bowel-movement-3">下痢と便秘が交互にくる</label></li>
                 </ul>
                 <p><label for="3-stool-condition">便の性状</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-0" value="0"><label for="3-stool-condition-0">普通</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-1" value="1"><label for="3-stool-condition-1">水様</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-2" value="2"><label for="3-stool-condition-2">泥状</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-3" value="3"><label for="3-stool-condition-3">軟便</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-4" value="4"><label for="3-stool-condition-4">硬くつながっている</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-5" value="5"><label for="3-stool-condition-5">コロコロ便</label></li>
-                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-6" value="6"><label for="3-stool-condition-6">硬くはないがすっきりしない</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-0" value="0" v-model="answer.stool_property"><label for="3-stool-condition-0">普通</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-1" value="1" v-model="answer.stool_property"><label for="3-stool-condition-1">水様</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-2" value="2" v-model="answer.stool_property"><label for="3-stool-condition-2">泥状</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-3" value="3" v-model="answer.stool_property"><label for="3-stool-condition-3">軟便</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-4" value="4" v-model="answer.stool_property"><label for="3-stool-condition-4">硬くつながっている</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-5" value="5" v-model="answer.stool_property"><label for="3-stool-condition-5">コロコロ便</label></li>
+                    <li><input type="radio" name="3-stool-condition" id="3-stool-condition-6" value="6" v-model="answer.stool_property"><label for="3-stool-condition-6">硬くはないがすっきりしない</label></li>
                 </ul>
                 <p><label for="3-remaining-flight">残便感</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-0" value="0"><label for="3-remaining-flight-0">なし</label></li>
-                    <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-1" value="1"><label for="3-remaining-flight-1">あり</label></li>
+                    <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-0" value="0" v-model="answer.remaining_stool"><label for="3-remaining-flight-0">なし</label></li>
+                    <li><input type="radio" name="3-remaining-flight" id="3-remaining-flight-1" value="1" v-model="answer.remaining_stool"><label for="3-remaining-flight-1">あり</label></li>
                 </ul>
                 <p><label for="3-stomach-ache">腹痛</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-0" value="0"><label for="3-stomach-ache-0">なし</label></li>
-                    <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-1" value="1"><label for="3-stomach-ache-1">あり</label></li>
+                    <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-0" value="0" v-model="answer.stomachache"><label for="3-stomach-ache-0">なし</label></li>
+                    <li><input type="radio" name="3-stomach-ache" id="3-stomach-ache-1" value="1" v-model="answer.stomachache"><label for="3-stomach-ache-1">あり</label></li>
                 </ul>
                 <p><label for="3-upset">腹のはり</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-upset" id="3-upset-0" value="0"><label for="3-upset-0">なし</label></li>
-                    <li><input type="radio" name="3-upset" id="3-upset-1" value="1"><label for="3-upset-1">あり</label></li>
+                    <li><input type="radio" name="3-upset" id="3-upset-0" value="0" v-model="answer.stomach_tension"><label for="3-upset-0">なし</label></li>
+                    <li><input type="radio" name="3-upset" id="3-upset-1" value="1" v-model="answer.stomach_tension"><label for="3-upset-1">あり</label></li>
                 </ul>
                 <p><label for="3-stomach-gas">腹にガスがたまる</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-0" value="0"><label for="3-stomach-gas-0">なし</label></li>
-                    <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-1" value="1"><label for="3-stomach-gas-1">あり</label></li>
+                    <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-0" value="0" v-model="answer.stomach_gas"><label for="3-stomach-gas-0">なし</label></li>
+                    <li><input type="radio" name="3-stomach-gas" id="3-stomach-gas-1" value="1" v-model="answer.stomach_gas"><label for="3-stomach-gas-1">あり</label></li>
                 </ul>
                 <p><label for="3-laxative">下剤の服用</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-laxative" id="3-laxative-0" value="0"><label for="3-laxative-0">なし</label></li>
-                    <li><input type="radio" name="3-laxative" id="3-laxative-1" value="1"><label for="3-laxative-1">あり</label></li>
+                    <li><input type="radio" name="3-laxative" id="3-laxative-0" value="0" v-model="answer.taking_laxative"><label for="3-laxative-0">なし</label></li>
+                    <li><input type="radio" name="3-laxative" id="3-laxative-1" value="1" v-model="answer.taking_laxative"><label for="3-laxative-1">あり</label></li>
                 </ul>
                 <p><label for="3-stomach-ache-by-laxative">下剤での腹痛</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-0" value="0"><label for="3-stomach-ache-by-laxative-0">なし</label></li>
-                    <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-1" value="1"><label for="3-stomach-ache-by-laxative-1">あり</label></li>
+                    <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-0" value="0" v-model="answer.stomachache_by_laxative"><label for="3-stomach-ache-by-laxative-0">なし</label></li>
+                    <li><input type="radio" name="3-stomach-ache-by-laxative" id="3-stomach-ache-by-laxative-1" value="1" v-model="answer.stomachache_by_laxative"><label for="3-stomach-ache-by-laxative-1">あり</label></li>
                 </ul>
                 <p class="visit_data__head_question">尿</p>
                 <p><label for="3-urine-frequency">頻度</label></p>
-                <p><input type="number" id="3-urine-frequency" name="3-urine-frequency">回／日</p>
+                <p><input type="number" id="3-urine-frequency" name="3-urine-frequency" v-model="answer.urine_flequency">回／日</p>
                 <p><label for="3-urine-nightly">夜寝てからトイレに起きる</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-0" value="0"><label for="3-urine-nightly-0">なし</label></li>
-                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-1" value="1"><label for="3-urine-nightly-1">あり</label></li>
+                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-0" value="0" v-model="answer.urine_after_bed"><label for="3-urine-nightly-0">なし</label></li>
+                    <li><input type="radio" name="3-urine-nightly" id="3-urine-nightly-1" value="1" v-model="answer.urine_after_bed"><label for="3-urine-nightly-1">あり</label></li>
                 </ul>
                 <p class="visit_data__head_question">月経</p>
                 <p><label for="3-menstruation">月経</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation" id="3-menstruation-0" value="0"><label for="3-menstruation-0">なし</label></li>
-                    <li><input type="radio" name="3-menstruation" id="3-menstruation-1" value="1"><label for="3-menstruation-1">あり</label></li>
+                    <li><input type="radio" name="3-menstruation" id="3-menstruation-0" value="0" v-model="answer.menstruation"><label for="3-menstruation-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation" id="3-menstruation-1" value="1" v-model="answer.menstruation"><label for="3-menstruation-1">あり</label></li>
                 </ul>
                 <p><label for="3-menstruation-first">初潮</label></p>
-                <p><input type="number" name="3-menstruation-first" id="3-menstruation-first">歳</p>
+                <p><input type="number" name="3-menstruation-first" id="3-menstruation-first" v-model="answer.first_tite_age">歳</p>
                 <p><label for="3-menstruation-close">閉経</label></p>
-                <p><input type="number" name="3-menstruation-close" id="3-menstruation-close">歳</p>
+                <p><input type="number" name="3-menstruation-close" id="3-menstruation-close" v-model="answer.menopause_age">歳</p>
                 <p><label for="3-menstruation-last">最終月経</label></p>
-                <p><input type="date" name="3-mestruation-last" id="3-menstruation-last-date">から<input type="number" name="3-menstruation-last" id="3-menstruation-last-period">日間</p>
+                <p><input type="date" name="3-mestruation-last" id="3-menstruation-last-date" v-model="answer.last_menstruation_age">から<input type="number" name="3-menstruation-last" id="3-menstruation-last-period" v-model="last_menstruation_lasting">日間</p>
                 <p><label for="3-menstruation-frequency">月経周期</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-0" value="0"><label for="3-menstruation-frequency-0">順調</label>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-0" value="0" v-model="answer.menstruation_rhythm"><label for="3-menstruation-frequency-0">順調</label>
                     </li>
-                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-1" value="1"><label for="3-menstruation-frequency-1">遅れる</label></li>
-                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-2" value="2"><label for="3-menstruation-frequency-2">早まる</label></li>
-                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-3" value="3"><label for="3-menstruation-frequency-3">一定しない</label></li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-1" value="1" v-model="answer.menstruation_rhythm"><label for="3-menstruation-frequency-1">遅れる</label></li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-2" value="2" v-model="answer.menstruation_rhythm"><label for="3-menstruation-frequency-2">早まる</label></li>
+                    <li><input type="radio" name="3-menstruation-frequency" id="3-menstruation-frequency-3" value="3" v-model="answer.menstruation_rhythm"><label for="3-menstruation-frequency-3">一定しない</label></li>
                 </ul>
                 <p><label for="3-mestruation-peiod">月経周期</label></p>
-                <p><input type="number" name="3-menstruation-period" id="3-menstruation-frequency-day">日間</p>
+                <p><input type="number" name="3-menstruation-period" id="3-menstruation-frequency-day" v-model="answer.menstruation_rhythm">日間</p>
                 <p><label for="3-menstruation-length">月経期間</label></p>
-                <p><input type="number" name="3-menstruation-length" id="3-menstruation-length">日間</p>
+                <p><input type="number" name="3-menstruation-length" id="3-menstruation-length" v-model="answer.menstruation_length">日間</p>
                 <p><label for="3-menstruation-pain">月経痛</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-0" value="0"><label for="3-menstruation-pain-0">なし</label></li>
-                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-1" value="1"><label for="3-menstruation-pain-1">月経前</label></li>
-                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-2" value="2"><label for="3-menstruation-pain-2">前半</label></li>
-                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-3" value="3"><label for="3-menstruation-pain-3">後半</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-0" value="0" v-model="answer.menstrual_pain"><label for="3-menstruation-pain-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-1" value="1" v-model="answer.menstrual_pain"><label for="3-menstruation-pain-1">月経前</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-2" value="2" v-model="answer.menstrual_pain"><label for="3-menstruation-pain-2">前半</label></li>
+                    <li><input type="radio" name="3-menstruation-pain" id="3-menstruation-pain-3" value="3" v-model="answer.menstrual_pain"><label for="3-menstruation-pain-3">後半</label></li>
                 </ul>
                 <p><label for="3-menstruation-painkiller">鎮痛剤</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-0" value="0"><label for="3-menstruation-painkiller-0">なし</label></li>
-                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-1" value="1"><label for="3-menstruation-painkiller-1">あり</label></li>
+                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-0" value="0" v-model="answer.menstruation_pain_killer"><label for="3-menstruation-painkiller-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-painkiller" id="3-menstruation-painkiller-1" value="1" v-model="answer.menstruation_pain_killer"><label for="3-menstruation-painkiller-1">あり</label></li>
                 </ul>
                 <p><label for="3-menstruation-amount">月経量</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-0" value="0"><label for="3-menstruation-amount-0">普通</label></li>
-                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-1" value="1"><label for="3-menstruation-amount-1">少ない</label></li>
-                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-2" value="2"><label for="3-menstruation-amount-2">多い</label></li>
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-0" value="0" v-model="answer.menstruation_amount"><label for="3-menstruation-amount-0">普通</label></li>
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-1" value="1" v-model="answer.menstruation_amount"><label for="3-menstruation-amount-1">少ない</label></li>
+                    <li><input type="radio" name="3-menstruation-amount" id="3-menstruation-amount-2" value="2" v-model="answer.menstruation_amount"><label for="3-menstruation-amount-2">多い</label></li>
                 </ul>
                 <p><label for="3-menstruation-upset">月経周期に関連した不調</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-0" value="0"><label for="3-menstruation-upset-0">なし</label></li>
-                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-1" value="1"><label for="3-menstruation-upset-1">月経前</label></li>
-                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-2" value="2"><label for="3-menstruation-upset-2">月経中</label></li>
-                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-3" value="2"><label for="3-menstruation-upset-3">その他の時期</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-0" value="0" v-model="answer.menstruation_upset"><label for="3-menstruation-upset-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-1" value="1" v-model="answer.menstruation_upset"><label for="3-menstruation-upset-1">月経前</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-2" value="2" v-model="answer.menstruation_upset"><label for="3-menstruation-upset-2">月経中</label></li>
+                    <li><input type="radio" name="3-menstruation-upset" id="3-menstruation-upset-3" value="3" v-model="answer.menstruation_upset"><label for="3-menstruation-upset-3">その他の時期</label></li>
                 </ul>
                 <p><label for="3-menstruation-bleed">不正出血</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-0" value="0"><label for="3-menstruation-bleed-0">なし</label></li>
-                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-1" value="1"><label for="3-menstruation-bleed-1">あり</label></li>
+                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-0" value="0" v-model="answer.abnormal_bleeding"><label for="3-menstruation-bleed-0">なし</label></li>
+                    <li><input type="radio" name="3-menstruation-bleed" id="3-menstruation-bleed-1" value="1" v-model="answer.abnormal_bleeding"><label for="3-menstruation-bleed-1">あり</label></li>
                 </ul>
                 <p><label for="3-menstruation-drop">帯下</label></p>
                 <ul class="visit_data__radio_box">
-                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-0" value="0"><label for="3-menstruation-drop-0">普通</label></li>
-                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-1" value="1"><label for="3-menstruation-drop-1">少ない</label></li>
-                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-2" value="2"><label for="3-menstruation-drop-2">多い</label></li>
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-0" value="0" v-model="answer.vaginal_discharge"><label for="3-menstruation-drop-0">普通</label></li>
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-1" value="1" v-model="answer.vaginal_discharge"><label for="3-menstruation-drop-1">少ない</label></li>
+                    <li><input type="radio" name="3-menstruation-drop" id="3-menstruation-drop-2" value="2" v-model="answer.vaginal_discharge"><label for="3-menstruation-drop-2">多い</label></li>
                 </ul>
                 <p class="visit_data__head_question">妊娠・出産歴</p>
                 <p><label for="3-pregnancy-count">妊娠経験</label></p>
-                <p><input type="number" name="3-pregnancy-count" id="3-pregrancy-count">回</p>
+                <p><input type="number" name="3-pregnancy-count" id="3-pregrancy-count" v-model="answer.past_pregnancy">回</p>
                 <p><label for="3-pregnancy-birth">出産</label></p>
-                <p><input type="number" name="3-pregrancy-birth" id="3-pregnancy-birth">回</p>
+                <p><input type="number" name="3-pregrancy-birth" id="3-pregnancy-birth" v-model="answer.past_birth">回</p>
                 <p><label for="3-pregnancy-abortion">自然流産</label></p>
-                <p><input type="number" name="3-pregnancy-abortion" id="3-pregnancy-abortion">回</p>
+                <p><input type="number" name="3-pregnancy-abortion" id="3-pregnancy-abortion" v-model="answer.spontaneous_miscarriage">回</p>
                 <p><label for="3-pregnancy-artificial-abortion">人工流産</label></p>
-                <p><input type="number" name="3-pregnancy-artificial-abortion" id="3-pregnancy-artificial-abortion">回</p>
+                <p><input type="number" name="3-pregnancy-artificial-abortion" id="3-pregnancy-artificial-abortion" v-model="answer.artificial_miscarriage">回</p>
             </div>
             <div v-show="$route.query.page == 4">
                 <p class="visit_data__head_question">現在の症状、普段の体質傾向についてお答えください</p>
@@ -207,15 +207,15 @@
                     <tbody>
                         <tr>
                             <th colspan="2">暑がり</th>
-                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-0" value="0"><label for="4-constitution-atsugari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-1" value="1"><label for="4-constitution-atsugari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-2" value="2"><label for="4-constitution-atsugari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-0" value="0" v-model="answer.constitution_atsugari"><label for="4-constitution-atsugari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-1" value="1" v-model="answer.constitution_atsugari"><label for="4-constitution-atsugari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-atsugari" id="4-constitution-atsugari-2" value="2" v-model="answer.constitution_atsugari"><label for="4-constitution-atsugari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">寒がり</th>
-                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-0" value="0"><label for="4-constitution-samugari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-1" value="1"><label for="4-constitution-samugari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-2" value="2"><label for="4-constitution-samugari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-0" value="0" v-model="answer.constitution_samugari"><label for="4-constitution-samugari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-1" value="1" v-model="answer.constitution_samugari"><label for="4-constitution-samugari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-samugari" id="4-constitution-samugari-2" value="2" v-model="answer.constitution_samugari"><label for="4-constitution-samugari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">冷える</th>
@@ -223,51 +223,51 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-0" value="0"><label for="4-constitution-hieru-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-1" value="1"><label for="4-constitution-hieru-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-2" value="2"><label for="4-constitution-hieru-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-0" value="0" v-model="answer.constitution_hie_zenshin"><label for="4-constitution-hieru-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-1" value="1" v-model="answer.constitution_hie_zenshin"><label for="4-constitution-hieru-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-zenshin" id="4-constitution-hieru-zenshin-2" value="2" v-model="answer.constitution_hie_zenshin"><label for="4-constitution-hieru-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>手</th>
-                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-0" value="0"><label for="4-constitution-hieru-te-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-1" value="1"><label for="4-constitution-hieru-te-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-2" value="2"><label for="4-constitution-hieru-te-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-0" value="0" v-model="answer.constitution_hie_te"><label for="4-constitution-hieru-te-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-1" value="1" v-model="answer.constitution_hie_te"><label for="4-constitution-hieru-te-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-te" id="4-constitution-hieru-te-2" value="2" v-model="answer.constitution_hie_te"><label for="4-constitution-hieru-te-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-0" value="0"><label for="4-constitution-hieru-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-1" value="1"><label for="4-constitution-hieru-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-2" value="2"><label for="4-constitution-hieru-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-0" value="0" v-model="answer.constitution_hie_ashi"><label for="4-constitution-hieru-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-1" value="1" v-model="answer.constitution_hie_ashi"><label for="4-constitution-hieru-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-ashi" id="4-constitution-hieru-ashi-2" value="2" v-model="answer.constitution_hie_ashi"><label for="4-constitution-hieru-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腹</th>
-                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-0" value="0"><label for="4-constitution-hieru-hara-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-1" value="1"><label for="4-constitution-hieru-hara-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-2" value="2"><label for="4-constitution-hieru-hara-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-0" value="0" v-model="answer.constitution_hie_hara"><label for="4-constitution-hieru-hara-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-1" value="1" v-model="answer.constitution_hie_hara"><label for="4-constitution-hieru-hara-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-hara" id="4-constitution-hieru-hara-2" value="2" v-model="answer.constitution_hie_hara"><label for="4-constitution-hieru-hara-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腰</th>
-                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-0" value="0"><label for="4-constitution-hieru-koshi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-1" value="1"><label for="4-constitution-hieru-koshi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-2" value="2"><label for="4-constitution-hieru-koshi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-0" value="0" v-model="answer.constitution_hie_koshi"><label for="4-constitution-hieru-koshi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-1" value="1" v-model="answer.constitution_hie_koshi"><label for="4-constitution-hieru-koshi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-koshi" id="4-constitution-hieru-koshi-2" value="2" v-model="answer.constitution_hie_koshi"><label for="4-constitution-hieru-koshi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>背</th>
-                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-0" value="0"><label for="4-constitution-hieru-se-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-1" value="1"><label for="4-constitution-hieru-se-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-2" value="2"><label for="4-constitution-hieru-se-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-0" value="0" v-model="answer.constitution_hie_se"><label for="4-constitution-hieru-se-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-1" value="1" v-model="answer.constitution_hie_se"><label for="4-constitution-hieru-se-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-se" id="4-constitution-hieru-se-2" value="2" v-model="answer.constitution_hie_se"><label for="4-constitution-hieru-se-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-0" value="0"><label for="4-constitution-hieru-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-1" value="1"><label for="4-constitution-hieru-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-2" value="2"><label for="4-constitution-hieru-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-0" value="0" v-model="answer.constitution_hie_other"><label for="4-constitution-hieru-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-1" value="1" v-model="answer.constitution_hie_other"><label for="4-constitution-hieru-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hieru-other" id="4-constitution-hieru-other-2" value="2" v-model="answer.constitution_hie_other"><label for="4-constitution-hieru-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">のぼせ</th>
