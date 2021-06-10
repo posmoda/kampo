@@ -271,15 +271,15 @@
                         </tr>
                         <tr>
                             <th colspan="2">のぼせ</th>
-                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-0" value="0"><label for="4-constitution-nobose-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-1" value="1"><label for="4-constitution-nobose-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-2" value="2"><label for="4-constitution-nobose-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-0" value="0" v-model="answer.constitution_nobose"><label for="4-constitution-nobose-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-1" value="1" v-model="answer.constitution_nobose"><label for="4-constitution-nobose-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nobose" id="4-constitution-nobose-2" value="2" v-model="answer.constitution_nobose"><label for="4-constitution-nobose-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">冷えのぼせ</th>
-                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-0" value="0"><label for="4-constitution-hienobose-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-1" value="1"><label for="4-constitution-hienobose-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-2" value="2"><label for="4-constitution-hienobose-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-0" value="0" v-model="answer.constitution_hienobose"><label for="4-constitution-hienobose-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-1" value="1" v-model="answer.constitution_hienobose"><label for="4-constitution-hienobose-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hienobose" id="4-constitution-hienobose-2" value="2" v-model="answer.constitution_hienobose"><label for="4-constitution-hienobose-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">疲れやすい</th>
@@ -287,30 +287,30 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-0" value="0"><label for="4-constitution-tsukare-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-1" value="1"><label for="4-constitution-tsukare-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-2" value="2"><label for="4-constitution-tsukare-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-0" value="0" v-model="answer.constitution_tukare_zenshin"><label for="4-constitution-tsukare-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-1" value="1" v-model="answer.constitution_tukare_zenshin"><label for="4-constitution-tsukare-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-zenshin" id="4-constitution-tsukare-zenshin-2" value="2" v-model="answer.constitution_tukare_zenshin"><label for="4-constitution-tsukare-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-0" value="0"><label for="4-constitution-tsukare-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-1" value="1"><label for="4-constitution-tsukare-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-2" value="2"><label for="4-constitution-tsukare-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-0" value="0" v-model="answer.constitution_tukare_ashi"><label for="4-constitution-tsukare-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-1" value="1" v-model="answer.constitution_tukare_ashi"><label for="4-constitution-tsukare-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ashi" id="4-constitution-tsukare-ashi-2" value="2" v-model="answer.constitution_tukare_ashi"><label for="4-constitution-tsukare-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-0" value="0"><label for="4-constitution-tsukare-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-1" value="1"><label for="4-constitution-tsukare-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-2" value="2"><label for="4-constitution-tsukare-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-0" value="0" v-model="answer.constitution_tukare_ude"><label for="4-constitution-tsukare-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-1" value="1" v-model="answer.constitution_tukare_ude"><label for="4-constitution-tsukare-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-ude" id="4-constitution-tsukare-ude-2" value="2" v-model="answer.constitution_tukare_ude"><label for="4-constitution-tsukare-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-0" value="0"><label for="4-constitution-tsukare-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-1" value="1"><label for="4-constitution-tsukare-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-2" value="2"><label for="4-constitution-tsukare-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-0" value="0" v-model="answer.constitution_tukare_other"><label for="4-constitution-tsukare-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-1" value="1" v-model="answer.constitution_tukare_other"><label for="4-constitution-tsukare-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsukare-other" id="4-constitution-tsukare-other-2" value="2" v-model="answer.constitution_tukare_other"><label for="4-constitution-tsukare-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">身体が重い</th>
@@ -318,44 +318,44 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-0" value="0"><label for="4-constitution-omoi-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-1" value="1"><label for="4-constitution-omoi-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-2" value="2"><label for="4-constitution-omoi-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-0" value="0" v-model="answer.constitution_omoi_zenshin"><label for="4-constitution-omoi-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-1" value="1" v-model="answer.constitution_omoi_zenshin"><label for="4-constitution-omoi-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-zenshin" id="4-constitution-omoi-zenshin-2" value="2" v-model="answer.constitution_omoi_zenshin"><label for="4-constitution-omoi-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腰</th>
-                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-0" value="0"><label for="4-constitution-omoi-koshi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-1" value="1"><label for="4-constitution-omoi-koshi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-2" value="2"><label for="4-constitution-omoi-koshi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-0" value="0" v-model="answer.constitution_omoi_koshi"><label for="4-constitution-omoi-koshi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-1" value="1" v-model="answer.constitution_omoi_koshi"><label for="4-constitution-omoi-koshi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-koshi" id="4-constitution-omoi-koshi-2" value="2" v-model="answer.constitution_omoi_koshi"><label for="4-constitution-omoi-koshi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膝</th>
-                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-0" value="0"><label for="4-constitution-omoi-hiza-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-1" value="1"><label for="4-constitution-omoi-hiza-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-2" value="2"><label for="4-constitution-omoi-hiza-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-0" value="0" v-model="answer.constitution_omoi_hiza"><label for="4-constitution-omoi-hiza-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-1" value="1" v-model="answer.constitution_omoi_hiza"><label for="4-constitution-omoi-hiza-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-hiza" id="4-constitution-omoi-hiza-2" value="2" v-model="answer.constitution_omoi_hiza"><label for="4-constitution-omoi-hiza-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-0" value="0"><label for="4-constitution-omoi-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-1" value="1"><label for="4-constitution-omoi-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-2" value="2"><label for="4-constitution-omoi-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-0" value="0" v-model="answer.constitution_omoi_ashi"><label for="4-constitution-omoi-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-1" value="1" v-model="answer.constitution_omoi_ashi"><label for="4-constitution-omoi-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ashi" id="4-constitution-omoi-ashi-2" value="2" v-model="answer.constitution_omoi_ashi"><label for="4-constitution-omoi-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-0" value="0"><label for="4-constitution-omoi-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-1" value="1"><label for="4-constitution-omoi-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-2" value="2"><label for="4-constitution-omoi-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-0" value="0" v-model="answer.constitution_omoi_ude"><label for="4-constitution-omoi-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-1" value="1" v-model="answer.constitution_omoi_ude"><label for="4-constitution-omoi-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-ude" id="4-constitution-omoi-ude-2" value="2" v-model="answer.constitution_omoi_ude"><label for="4-constitution-omoi-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-0" value="0"><label for="4-constitution-omoi-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-1" value="1"><label for="4-constitution-omoi-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-2" value="2"><label for="4-constitution-omoi-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-0" value="0" v-model="answer.constitution_omoi_other"><label for="4-constitution-omoi-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-1" value="1" v-model="answer.constitution_omoi_other"><label for="4-constitution-omoi-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-omoi-other" id="4-constitution-omoi-other-2" value="2" v-model="answer.constitution_omoi_other"><label for="4-constitution-omoi-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">だるい</th>
@@ -363,30 +363,30 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-0" value="0"><label for="4-constitution-darui-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-1" value="1"><label for="4-constitution-darui-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-2" value="2"><label for="4-constitution-darui-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-0" value="0" v-model="answer.constitution_darui_zenshin"><label for="4-constitution-darui-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-1" value="1" v-model="answer.constitution_darui_zenshin"><label for="4-constitution-darui-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-darui-zenshin" id="4-constitution-darui-zenshin-2" value="2" v-model="answer.constitution_darui_zenshin"><label for="4-constitution-darui-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-0" value="0"><label for="4-constitution-darui-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-1" value="1"><label for="4-constitution-darui-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-2" value="2"><label for="4-constitution-darui-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-0" value="0" v-model="answer.constitution_darui_ashi"><label for="4-constitution-darui-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-1" value="1" v-model="answer.constitution_darui_ashi"><label for="4-constitution-darui-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ashi" id="4-constitution-darui-ashi-2" value="2" v-model="answer.constitution_darui_ashi"><label for="4-constitution-darui-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-0" value="0"><label for="4-constitution-darui-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-1" value="1"><label for="4-constitution-darui-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-2" value="2"><label for="4-constitution-darui-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-0" value="0" v-model="answer.constitution_darui_ude"><label for="4-constitution-darui-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-1" value="1" v-model="answer.constitution_darui_ude"><label for="4-constitution-darui-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-darui-ude" id="4-constitution-darui-ude-2" value="2" v-model="answer.constitution_darui_ude"><label for="4-constitution-darui-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-0" value="0"><label for="4-constitution-darui-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-1" value="1"><label for="4-constitution-darui-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-2" value="2"><label for="4-constitution-darui-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-0" value="0" v-model="answer.constitution_darui_other"><label for="4-constitution-darui-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-1" value="1" v-model="answer.constitution_darui_other"><label for="4-constitution-darui-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-darui-other" id="4-constitution-darui-other-2" value="2" v-model="answer.constitution_darui_other"><label for="4-constitution-darui-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">力が入らない</th>
@@ -394,44 +394,44 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-0" value="0"><label for="4-constitution-chikara-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-1" value="1"><label for="4-constitution-chikara-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-2" value="2"><label for="4-constitution-chikara-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-0" value="0" v-model="answer.constitution_chikara_zenshin"><label for="4-constitution-chikara-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-1" value="1" v-model="answer.constitution_chikara_zenshin"><label for="4-constitution-chikara-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-zenshin" id="4-constitution-chikara-zenshin-2" value="2" v-model="answer.constitution_chikara_zenshin"><label for="4-constitution-chikara-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腰</th>
-                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-0" value="0"><label for="4-constitution-chikara-koshi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-1" value="1"><label for="4-constitution-chikara-koshi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-2" value="2"><label for="4-constitution-chikara-koshi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-0" value="0" v-model="answer.constitution_chikara_koshi"><label for="4-constitution-chikara-koshi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-1" value="1" v-model="answer.constitution_chikara_koshi"><label for="4-constitution-chikara-koshi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-koshi" id="4-constitution-chikara-koshi-2" value="2" v-model="answer.constitution_chikara_koshi"><label for="4-constitution-chikara-koshi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膝</th>
-                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-0" value="0"><label for="4-constitution-chikara-hiza-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-1" value="1"><label for="4-constitution-chikara-hiza-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-2" value="2"><label for="4-constitution-chikara-hiza-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-0" value="0" v-model="answer.constitution_chikara_hiza"><label for="4-constitution-chikara-hiza-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-1" value="1" v-model="answer.constitution_chikara_hiza"><label for="4-constitution-chikara-hiza-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-hiza" id="4-constitution-chikara-hiza-2" value="2" v-model="answer.constitution_chikara_hiza"><label for="4-constitution-chikara-hiza-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-0" value="0"><label for="4-constitution-chikara-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-1" value="1"><label for="4-constitution-chikara-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-2" value="2"><label for="4-constitution-chikara-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-0" value="0" v-model="answer.constitution_chikara_ashi"><label for="4-constitution-chikara-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-1" value="1" v-model="answer.constitution_chikara_ashi"><label for="4-constitution-chikara-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ashi" id="4-constitution-chikara-ashi-2" value="2" v-model="answer.constitution_chikara_ashi"><label for="4-constitution-chikara-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-0" value="0"><label for="4-constitution-chikara-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-1" value="1"><label for="4-constitution-chikara-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-2" value="2"><label for="4-constitution-chikara-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-0" value="0" v-model="answer.constitution_chikara_ude"><label for="4-constitution-chikara-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-1" value="1" v-model="answer.constitution_chikara_ude"><label for="4-constitution-chikara-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-ude" id="4-constitution-chikara-ude-2" value="2" v-model="answer.constitution_chikara_ude"><label for="4-constitution-chikara-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-0" value="0"><label for="4-constitution-chikara-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-1" value="1"><label for="4-constitution-chikara-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-2" value="2"><label for="4-constitution-chikara-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-0" value="0" v-model="answer.constitution_chikara_other"><label for="4-constitution-chikara-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-1" value="1" v-model="answer.constitution_chikara_other"><label for="4-constitution-chikara-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikara-other" id="4-constitution-chikara-other-2" value="2" v-model="answer.constitution_chikara_other"><label for="4-constitution-chikara-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">汗をかきやすい</th>
@@ -439,193 +439,193 @@
                         <tr>
                             <th></th>
                             <th>全身</th>
-                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-0" value="0"><label for="4-constitution-ase-zenshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-1" value="1"><label for="4-constitution-ase-zenshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-2" value="2"><label for="4-constitution-ase-zenshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ase-zenshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ase-zenshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ase-zenshin" id="4-constitution-ase-zenshin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ase-zenshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>頭</th>
-                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-0" value="0"><label for="4-constitution-ase-atama-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-1" value="1"><label for="4-constitution-ase-atama-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-2" value="2"><label for="4-constitution-ase-atama-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ase-atama-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ase-atama-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ase-atama" id="4-constitution-ase-atama-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ase-atama-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>手のひら</th>
-                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-0" value="0"><label for="4-constitution-ase-tenohira-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-1" value="1"><label for="4-constitution-ase-tenohira-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-2" value="2"><label for="4-constitution-ase-tenohira-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ase-tenohira-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ase-tenohira-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ase-tenohira" id="4-constitution-ase-tenohira-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ase-tenohira-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足の裏</th>
-                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-0" value="0"><label for="4-constitution-ase-ashinoura-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-1" value="1"><label for="4-constitution-ase-ashinoura-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-2" value="2"><label for="4-constitution-ase-ashinoura-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ase-ashinoura-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ase-ashinoura-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ase-ashinoura" id="4-constitution-ase-ashinoura-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ase-ashinoura-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-0" value="0"><label for="4-constitution-ase-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-1" value="1"><label for="4-constitution-ase-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-2" value="2"><label for="4-constitution-ase-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ase-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ase-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ase-other" id="4-constitution-ase-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ase-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">汗が出ない</th>
-                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-0" value="0"><label for="4-constitution-asedenai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-1" value="1"><label for="4-constitution-asedenai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-2" value="2"><label for="4-constitution-asedenai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-asedenai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-asedenai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-asedenai" id="4-constitution-asedenai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-asedenai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">寝汗</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_nease"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_nease"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_nease"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">悪寒（寒気）</th>
-                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-0" value="0"><label for="4-constitution-okan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-1" value="1"><label for="4-constitution-okan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-2" value="2"><label for="4-constitution-okan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-0" value="0" v-model="answer.constitution_okan"><label for="4-constitution-okan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-1" value="1" v-model="answer.constitution_okan"><label for="4-constitution-okan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-okan" id="4-constitution-okan-2" value="2" v-model="answer.constitution_okan"><label for="4-constitution-okan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">悪風（風に当たったとき不快）</th>
-                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-0" value="0"><label for="4-constitution-akufu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-1" value="1"><label for="4-constitution-akufu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-2" value="2"><label for="4-constitution-akufu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-0" value="0" v-model="answer.constitution_akufu"><label for="4-constitution-akufu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-1" value="1" v-model="answer.constitution_akufu"><label for="4-constitution-akufu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-akufu" id="4-constitution-akufu-2" value="2" v-model="answer.constitution_akufu"><label for="4-constitution-akufu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">発熱</th>
-                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-0" value="0"><label for="4-constitution-hatsunetsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-1" value="1"><label for="4-constitution-hatsunetsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-2" value="2"><label for="4-constitution-hatsunetsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-0" value="0" v-model="answer.constitution_hatsunetsu"><label for="4-constitution-hatsunetsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-1" value="1" v-model="answer.constitution_hatsunetsu"><label for="4-constitution-hatsunetsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hatsunetsu" id="4-constitution-hatsunetsu-2" value="2" v-model="answer.constitution_hatsunetsu"><label for="4-constitution-hatsunetsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">微熱</th>
-                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-0" value="0"><label for="4-constitution-binetsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-1" value="1"><label for="4-constitution-binetsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-2" value="2"><label for="4-constitution-binetsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-0" value="0" v-model="answer.constitution_binetsu"><label for="4-constitution-binetsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-1" value="1" v-model="answer.constitution_binetsu"><label for="4-constitution-binetsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-binetsu" id="4-constitution-binetsu-2" value="2" v-model="answer.constitution_binetsu"><label for="4-constitution-binetsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">熱感（熱っぽい）</th>
-                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-0" value="0"><label for="4-constitution-netsukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-1" value="1"><label for="4-constitution-netsukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-2" value="2"><label for="4-constitution-netsukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-0" value="0" v-model="answer.constitution_netsukan"><label for="4-constitution-netsukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-1" value="1" v-model="answer.constitution_netsukan"><label for="4-constitution-netsukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-netsukan" id="4-constitution-netsukan-2" value="2" v-model="answer.constitution_netsukan"><label for="4-constitution-netsukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">眠気が強い</th>
-                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-0" value="0"><label for="4-constitution-nemuke-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-1" value="1"><label for="4-constitution-nemuke-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-2" value="2"><label for="4-constitution-nemuke-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-0" value="0" v-model="answer.constitution_nemuke"><label for="4-constitution-nemuke-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-1" value="1" v-model="answer.constitution_memuke"><label for="4-constitution-nemuke-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nemuke" id="4-constitution-nemuke-2" value="2" v-model="answer.constitution_nemuke"><label for="4-constitution-nemuke-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">風邪をひきやすい</th>
-                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-0" value="0"><label for="4-constitution-kaze-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-1" value="1"><label for="4-constitution-kaze-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-2" value="2"><label for="4-constitution-kaze-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-0" value="0" v-model="answer.constitution_kaze"><label for="4-constitution-kaze-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-1" value="1" v-model="answer.constitution_kaze"><label for="4-constitution-kaze-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kaze" id="4-constitution-kaze-2" value="2" v-model="answer.constitution_kaze"><label for="4-constitution-kaze-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">肥満</th>
-                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-0" value="0"><label for="4-constitution-himan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-1" value="1"><label for="4-constitution-himan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-2" value="2"><label for="4-constitution-himan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-0" value="0" v-model="answer.constitution_himan"><label for="4-constitution-himan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-1" value="1" v-model="answer.constitution_himan"><label for="4-constitution-himan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-himan" id="4-constitution-himan-2" value="2" v-model="answer.constitution_himan"><label for="4-constitution-himan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">やせ（太れない）</th>
-                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-0" value="0"><label for="4-constitution-yase-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-1" value="1"><label for="4-constitution-yase-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-2" value="2"><label for="4-constitution-yase-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-0" value="0" v-model="answer.constitution_yase"><label for="4-constitution-yase-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-1" value="1" v-model="answer.constitution_yase"><label for="4-constitution-yase-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-yase" id="4-constitution-yase-2" value="2" v-model="answer.constitution_yase"><label for="4-constitution-yase-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">体重増加</th>
-                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-0" value="0"><label for="4-constitution-taijuzoka-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-1" value="1"><label for="4-constitution-taijuzoka-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-2" value="2"><label for="4-constitution-taijuzoka-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-0" value="0" v-model="answer.constitution_taijuzoka"><label for="4-constitution-taijuzoka-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-1" value="1" v-model="answer.constitution_taijuzoka"><label for="4-constitution-taijuzoka-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taijuzoka" id="4-constitution-taijuzoka-2" value="2" v-model="answer.constitution_taijuzoka"><label for="4-constitution-taijuzoka-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">体重減少</th>
-                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-0" value="0"><label for="4-constitution-taijugensyo-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-1" value="1"><label for="4-constitution-taijugensyo-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-2" value="2"><label for="4-constitution-taijugensyo-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-0" value="0" v-model="answer.constitution_taijugensho"><label for="4-constitution-taijugensyo-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-1" value="1" v-model="answer.constitution_taijugensho"><label for="4-constitution-taijugensyo-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taijugensyo" id="4-constitution-taijugensyo-2" value="2" v-model="answer.constitution_taijugensho"><label for="4-constitution-taijugensyo-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">過食</th>
-                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-0" value="0"><label for="4-constitution-kasyoku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-1" value="1"><label for="4-constitution-kasyoku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-2" value="2"><label for="4-constitution-kasyoku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-0" value="0" v-model="answer.constitution_kashoku"><label for="4-constitution-kasyoku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-1" value="1" v-model="answer.constitution_kashoku"><label for="4-constitution-kasyoku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kasyoku" id="4-constitution-kasyoku-2" value="2" v-model="answer.constitution_kashoku"><label for="4-constitution-kasyoku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">拒食</th>
-                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-0" value="0"><label for="4-constitution-kyosyoku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-1" value="1"><label for="4-constitution-kyosyoku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-2" value="2"><label for="4-constitution-kyosyoku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-0" value="0" v-model="answer.constitution_kyoshoku"><label for="4-constitution-kyosyoku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-1" value="1" v-model="answer.constitution_kyoshoku"><label for="4-constitution-kyosyoku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kyosyoku" id="4-constitution-kyosyoku-2" value="2" v-model="answer.constitution_kyoshoku"><label for="4-constitution-kyosyoku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">水分をよくとる</th>
-                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-0" value="0"><label for="4-constitution-suibun-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-1" value="1"><label for="4-constitution-suibun-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-2" value="2"><label for="4-constitution-suibun-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-0" value="0" v-model="answer.constitution_suibun"><label for="4-constitution-suibun-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-1" value="1" v-model="answer.constitution_suibun"><label for="4-constitution-suibun-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-suibun" id="4-constitution-suibun-2" value="2" v-model="answer.constitution_suibun"><label for="4-constitution-suibun-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">浮腫（むくみ）</th>
-                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-0" value="0"><label for="4-constitution-mukumi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-1" value="1"><label for="4-constitution-mukumi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-2" value="2"><label for="4-constitution-mukumi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-0" value="0" v-model="answer.constitution_mukumi"><label for="4-constitution-mukumi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-1" value="1" v-model="answer.constitution_mukumi"><label for="4-constitution-mukumi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mukumi" id="4-constitution-mukumi-2" value="2" v-model="answer.constitution_mukumi"><label for="4-constitution-mukumi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">リンパ浮腫</th>
-                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-0" value="0"><label for="4-constitution-rinpahusyu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-1" value="1"><label for="4-constitution-rinpahusyu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-2" value="2"><label for="4-constitution-rinpahusyu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-0" value="0" v-model="answer.constitution_lymph"><label for="4-constitution-rinpahusyu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-1" value="1" v-model="answer.constitution_lymph"><label for="4-constitution-rinpahusyu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-rinpahusyu" id="4-constitution-rinpahusyu-2" value="2" v-model="answer.constitution_lymph"><label for="4-constitution-rinpahusyu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">リンパ節腫脹</th>
-                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-0" value="0"><label for="4-constitution-rinpasyutyou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-1" value="1"><label for="4-constitution-rinpasyutyou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-2" value="2"><label for="4-constitution-rinpasyutyou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-0" value="0" v-model="answer.constitution_lymph_hare"><label for="4-constitution-rinpasyutyou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-1" value="1" v-model="answer.constitution_lymph_hare"><label for="4-constitution-rinpasyutyou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-rinpasyutyou" id="4-constitution-rinpasyutyou-2" value="2" v-model="answer.constitution_lymph_hare"><label for="4-constitution-rinpasyutyou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">レイノー現象</th>
-                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-0" value="0"><label for="4-constitution-reino-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-1" value="1"><label for="4-constitution-reino-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-2" value="2"><label for="4-constitution-reino-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-0" value="0" v-model="answer.constitution_raynoud"><label for="4-constitution-reino-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-1" value="1" v-model="answer.constitution_raynoud"><label for="4-constitution-reino-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-reino" id="4-constitution-reino-2" value="2" v-model="answer.constitution_raynoud"><label for="4-constitution-reino-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">かゆみ</th>
-                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-0" value="0"><label for="4-constitution-kayumi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-1" value="1"><label for="4-constitution-kayumi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-2" value="2"><label for="4-constitution-kayumi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-0" value="0" v-model="answer.constitution_kayumi"><label for="4-constitution-kayumi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-1" value="1" v-model="answer.constitution_kayumi"><label for="4-constitution-kayumi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kayumi" id="4-constitution-kayumi-2" value="2" v-model="answer.constitution_kayumi"><label for="4-constitution-kayumi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">乾燥</th>
-                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-0" value="0"><label for="4-constitution-kanaso-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-1" value="1"><label for="4-constitution-kanaso-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-2" value="2"><label for="4-constitution-kanaso-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-0" value="0" v-model="answer.constitution_kanso"><label for="4-constitution-kanaso-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-1" value="1" v-model="answer.constitution_kanso"><label for="4-constitution-kanaso-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kanaso" id="4-constitution-kanaso-2" value="2" v-model="answer.constitution_kanso"><label for="4-constitution-kanaso-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">しこり</th>
-                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-0" value="0"><label for="4-constitution-shikori-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-1" value="1"><label for="4-constitution-shikori-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-2" value="2"><label for="4-constitution-shikori-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-0" value="0" v-model="answer.constitution_shikori"><label for="4-constitution-shikori-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-1" value="1" v-model="answer.constitution_shikori"><label for="4-constitution-shikori-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shikori" id="4-constitution-shikori-2" value="2" v-model="answer.constitution_shikori"><label for="4-constitution-shikori-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">体の不快感・違和感</th>
-                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-0" value="0"><label for="4-constitution-fukaikan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-1" value="1"><label for="4-constitution-fukaikan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-2" value="2"><label for="4-constitution-fukaikan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-0" value="0" v-model="answer.constitution_fukaikan"><label for="4-constitution-fukaikan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-1" value="1" v-model="answer.constitution_fukaikan"><label for="4-constitution-fukaikan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-fukaikan" id="4-constitution-fukaikan-2" value="2" v-model="answer.constitution_fukaikan"><label for="4-constitution-fukaikan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">黄疸</th>
-                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-0" value="0"><label for="4-constitution-oudan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-1" value="1"><label for="4-constitution-oudan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-2" value="2"><label for="4-constitution-oudan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-0" value="0" v-model="answer.constitution_oudan"><label for="4-constitution-oudan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-1" value="1" v-model="answer.constitution_oudan"><label for="4-constitution-oudan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-oudan" id="4-constitution-oudan-2" value="2" v-model="answer.constitution_oudan"><label for="4-constitution-oudan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">くすぐったがり</th>
-                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-0" value="0"><label for="4-constitution-kusuguttagari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-1" value="1"><label for="4-constitution-kusuguttagari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-2" value="2"><label for="4-constitution-kusuguttagari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-0" value="0" v-model="answer.constitution_kusuguttagari"><label for="4-constitution-kusuguttagari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-1" value="1" v-model="answer.constitution_kusuguttagari"><label for="4-constitution-kusuguttagari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kusuguttagari" id="4-constitution-kusuguttagari-2" value="2" v-model="answer.constitution_kusuguttagari"><label for="4-constitution-kusuguttagari-2">◎</label></td>
                         </tr>
                         
                     </tbody>
@@ -637,111 +637,111 @@
                     <tbody>
                         <tr>
                             <th colspan="2">不安感</th>
-                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-0" value="0"><label for="4-constitution-fuankan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-1" value="1"><label for="4-constitution-fuankan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-2" value="2"><label for="4-constitution-fuankan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-0" value="0" v-model="answer.constitution_fuankan"><label for="4-constitution-fuankan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-1" value="1" v-model="answer.constitution_fuankan"><label for="4-constitution-fuankan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-fuankan" id="4-constitution-fuankan-2" value="2" v-model="answer.constitution_fuankan"><label for="4-constitution-fuankan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">焦燥感</th>
-                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-0" value="0"><label for="4-constitution-shousoukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-1" value="1"><label for="4-constitution-shousoukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-2" value="2"><label for="4-constitution-shousoukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-0" value="0" v-model="answer.constitution_shousoukan"><label for="4-constitution-shousoukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-1" value="1" v-model="answer.constitution_shousoukan"><label for="4-constitution-shousoukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shousoukan" id="4-constitution-shousoukan-2" value="2" v-model="answer.constitution_shousoukan"><label for="4-constitution-shousoukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">無気力</th>
-                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-0" value="0"><label for="4-constitution-mukiryoku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-1" value="1"><label for="4-constitution-mukiryoku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-2" value="2"><label for="4-constitution-mukiryoku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-0" value="0" v-model="answer.constitution_mukiryoku"><label for="4-constitution-mukiryoku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-1" value="1" v-model="answer.constitution_mukiryoku"><label for="4-constitution-mukiryoku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mukiryoku" id="4-constitution-mukiryoku-2" value="2" v-model="answer.constitution_mukiryoku"><label for="4-constitution-mukiryoku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">憂鬱感</th>
-                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-0" value="0"><label for="4-constitution-yuuutsukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-1" value="1"><label for="4-constitution-yuuutsukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-2" value="2"><label for="4-constitution-yuuutsukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-0" value="0" v-model="answer.constitution_yuutsu"><label for="4-constitution-yuuutsukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-1" value="1" v-model="answer.constitution_yuutsu"><label for="4-constitution-yuuutsukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-yuuutsukan" id="4-constitution-yuuutsukan-2" value="2" v-model="answer.constitution_yuutsu"><label for="4-constitution-yuuutsukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">朝起きるのがつらい</th>
-                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-0" value="0"><label for="4-constitution-asatsurai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-1" value="1"><label for="4-constitution-asatsurai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-2" value="2"><label for="4-constitution-asatsurai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-0" value="0" v-model="answer.constitution_asatsurai"><label for="4-constitution-asatsurai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-1" value="1" v-model="answer.constitution_asatsurai"><label for="4-constitution-asatsurai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-asatsurai" id="4-constitution-asatsurai-2" value="2" v-model="answer.constitution_asatsurai"><label for="4-constitution-asatsurai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">イライラする</th>
-                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-0" value="0"><label for="4-constitution-iraira-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-1" value="1"><label for="4-constitution-iraira-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-2" value="2"><label for="4-constitution-iraira-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-0" value="0" v-model="answer.constitution_iraira"><label for="4-constitution-iraira-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-1" value="1" v-model="answer.constitution_iraira"><label for="4-constitution-iraira-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-iraira" id="4-constitution-iraira-2" value="2" v-model="answer.constitution_iraira"><label for="4-constitution-iraira-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">怒りっぽい</th>
-                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-0" value="0"><label for="4-constitution-okorippoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-1" value="1"><label for="4-constitution-okorippoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-2" value="2"><label for="4-constitution-okorippoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-0" value="0" v-model="answer.constitution_okorippoi"><label for="4-constitution-okorippoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-1" value="1" v-model="answer.constitution_okorippoi"><label for="4-constitution-okorippoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-okorippoi" id="4-constitution-okorippoi-2" value="2" v-model="answer.constitution_okorippoi"><label for="4-constitution-okorippoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">気分障害（気分にむらがある）</th>
-                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-0" value="0"><label for="4-constitution-kibunshougai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-1" value="1"><label for="4-constitution-kibunshougai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-2" value="2"><label for="4-constitution-kibunshougai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-0" value="0" v-model="answer.constitution_kibunshogai"><label for="4-constitution-kibunshougai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-1" value="1" v-model="answer.constitution_kibunshogai"><label for="4-constitution-kibunshougai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kibunshougai" id="4-constitution-kibunshougai-2" value="2" v-model="answer.constitution_kibunshogai"><label for="4-constitution-kibunshougai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">夜泣き</th>
-                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-0" value="0"><label for="4-constitution-yonaki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-1" value="1"><label for="4-constitution-yonaki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-2" value="2"><label for="4-constitution-yonaki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-0" value="0" v-model="answer.constitution_yonaki"><label for="4-constitution-yonaki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-1" value="1" v-model="answer.constitution_yonaki"><label for="4-constitution-yonaki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-yonaki" id="4-constitution-yonaki-2" value="2" v-model="answer.constitution_yonaki"><label for="4-constitution-yonaki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">歯ぎしり</th>
-                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-0" value="0"><label for="4-constitution-hagishiri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-1" value="1"><label for="4-constitution-hagishiri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-2" value="2"><label for="4-constitution-hagishiri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-0" value="0" v-model="answer.constitution_hagishiri"><label for="4-constitution-hagishiri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-1" value="1" v-model="answer.constitution_hagishiri"><label for="4-constitution-hagishiri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hagishiri" id="4-constitution-hagishiri-2" value="2" v-model="answer.constitution_hagishiri"><label for="4-constitution-hagishiri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">神経過敏（驚きやすい）</th>
-                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-0" value="0"><label for="4-constitution-shinkeikabin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-1" value="1"><label for="4-constitution-shinkeikabin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-2" value="2"><label for="4-constitution-shinkeikabin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-0" value="0" v-model="answer.constitution_shinkeikabin"><label for="4-constitution-shinkeikabin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-1" value="1" v-model="answer.constitution_shinkeikabin"><label for="4-constitution-shinkeikabin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeikabin" id="4-constitution-shinkeikabin-2" value="2" v-model="answer.constitution_shinkeikabin"><label for="4-constitution-shinkeikabin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">忘れっぽい</th>
-                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-0" value="0"><label for="4-constitution-wasureppoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-1" value="1"><label for="4-constitution-wasureppoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-2" value="2"><label for="4-constitution-wasureppoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-0" value="0" v-model="answer.constitution_wasureppoi"><label for="4-constitution-wasureppoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-1" value="1" v-model="answer.constitution_wasureppoi"><label for="4-constitution-wasureppoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-wasureppoi" id="4-constitution-wasureppoi-2" value="2" v-model="answer.constitution_wasureppoi"><label for="4-constitution-wasureppoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">意識障害（朦朧とする）</th>
-                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-0" value="0"><label for="4-constitution-ishikishougai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-1" value="1"><label for="4-constitution-ishikishougai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-2" value="2"><label for="4-constitution-ishikishougai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-0" value="0" v-model="answer.constitution_ishikishogai"><label for="4-constitution-ishikishougai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-1" value="1" v-model="answer.constitution_ishikishogai"><label for="4-constitution-ishikishougai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ishikishougai" id="4-constitution-ishikishougai-2" value="2" v-model="answer.constitution_ishikishogai"><label for="4-constitution-ishikishougai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">失神</th>
-                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-0" value="0"><label for="4-constitution-shisshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-1" value="1"><label for="4-constitution-shisshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-2" value="2"><label for="4-constitution-shisshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-0" value="0" v-model="answer.constitution_shisshin"><label for="4-constitution-shisshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-1" value="1" v-model="answer.constitution_shisshin"><label for="4-constitution-shisshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shisshin" id="4-constitution-shisshin-2" value="2" v-model="answer.constitution_shisshin"><label for="4-constitution-shisshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">痴呆（ぼけ）</th>
-                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-0" value="0"><label for="4-constitution-boke-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-1" value="1"><label for="4-constitution-boke-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-2" value="2"><label for="4-constitution-boke-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-0" value="0" v-model="answer.constitution_chiho"><label for="4-constitution-boke-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-1" value="1" v-model="answer.constitution_chiho"><label for="4-constitution-boke-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-boke" id="4-constitution-boke-2" value="2" v-model="answer.constitution_chiho"><label for="4-constitution-boke-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">幻覚</th>
-                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-0" value="0"><label for="4-constitution-genkaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-1" value="1"><label for="4-constitution-genkaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-2" value="2"><label for="4-constitution-genkaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-0" value="0" v-model="answer.constitution_genkaku"><label for="4-constitution-genkaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-1" value="1" v-model="answer.constitution_genkaku"><label for="4-constitution-genkaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-genkaku" id="4-constitution-genkaku-2" value="2" v-model="answer.constitution_genkaku"><label for="4-constitution-genkaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">幻聴</th>
-                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-0" value="0"><label for="4-constitution-genchou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-1" value="1"><label for="4-constitution-genchou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-2" value="2"><label for="4-constitution-genchou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-0" value="0" v-model="answer.constitution_gencho"><label for="4-constitution-genchou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-1" value="1" v-model="answer.constitution_gencho"><label for="4-constitution-genchou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-genchou" id="4-constitution-genchou-2" value="2" v-model="answer.constitution_gencho"><label for="4-constitution-genchou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">においが気になる</th>
-                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-0" value="0"><label for="4-constitution-nioi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-1" value="1"><label for="4-constitution-nioi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-2" value="2"><label for="4-constitution-nioi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-0" value="0" v-model="answer.constitution_nioi"><label for="4-constitution-nioi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-1" value="1" v-model="answer.constitution_nioi"><label for="4-constitution-nioi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nioi" id="4-constitution-nioi-2" value="2" v-model="answer.constitution_nioi"><label for="4-constitution-nioi-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -756,36 +756,36 @@
                         <tr>
                             <th></th>
                             <th>ズキズキ</th>
-                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-0" value="0"><label for="4-constitution-zutsu-zukizuki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-1" value="1"><label for="4-constitution-zutsu-zukizuki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-2" value="2"><label for="4-constitution-zutsu-zukizuki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-0" value="0" v-model="answer.constitution_zutsu_zukizuki"><label for="4-constitution-zutsu-zukizuki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-1" value="1" v-model="answer.constitution_zutsu_zukizuki"><label for="4-constitution-zutsu-zukizuki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-zukizuki" id="4-constitution-zutsu-zukizuki-2" value="2" v-model="answer.constitution_zutsu_zukizuki"><label for="4-constitution-zutsu-zukizuki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>キリキリ</th>
-                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-0" value="0"><label for="4-constitution-zutsu-kirikiri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-1" value="1"><label for="4-constitution-zutsu-kirikiri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-2" value="2"><label for="4-constitution-zutsu-kirikiri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-0" value="0" v-model="answer.constitution_zutsu_kirikiri"><label for="4-constitution-zutsu-kirikiri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-1" value="1" v-model="answer.constitution_zutsu_kirikiri"><label for="4-constitution-zutsu-kirikiri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-kirikiri" id="4-constitution-zutsu-kirikiri-2" value="2" v-model="answer.constitution_zutsu_kirikiri"><label for="4-constitution-zutsu-kirikiri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>締め付けられる</th>
-                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-0" value="0"><label for="4-constitution-zutsu-shimetsuke-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-1" value="1"><label for="4-constitution-zutsu-shimetsuke-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-2" value="2"><label for="4-constitution-zutsu-shimetsuke-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-0" value="0" v-model="answer.constitution_zutsu_shimetsuke"><label for="4-constitution-zutsu-shimetsuke-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-1" value="1" v-model="answer.constitution_zutsu_shimetsuke"><label for="4-constitution-zutsu-shimetsuke-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-shimetsuke" id="4-constitution-zutsu-shimetsuke-2" value="2" v-model="answer.constitution_zutsu_shimetsuke"><label for="4-constitution-zutsu-shimetsuke-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他</th>
-                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-0" value="0"><label for="4-constitution-zutsu-sonota-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-1" value="1"><label for="4-constitution-zutsu-sonota-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-2" value="2"><label for="4-constitution-zutsu-sonota-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-0" value="0" v-model="answer.constitution_zutsu_other"><label for="4-constitution-zutsu-sonota-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-1" value="1" v-model="answer.constitution_zutsu_other"><label for="4-constitution-zutsu-sonota-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zutsu-sonota" id="4-constitution-zutsu-sonota-2" value="2" v-model="answer.constitution_zutsu_other"><label for="4-constitution-zutsu-sonota-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">頭重</th>
-                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-0" value="0"><label for="4-constitution-zujuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-1" value="1"><label for="4-constitution-zujuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-2" value="2"><label for="4-constitution-zujuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-0" value="0" v-model="answer.constitution_zuju"><label for="4-constitution-zujuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-1" value="1" v-model="answer.constitution_zuju"><label for="4-constitution-zujuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zujuu" id="4-constitution-zujuu-2" value="2" v-model="answer.constitution_zuju"><label for="4-constitution-zujuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">めまい</th>
@@ -793,124 +793,124 @@
                         <tr>
                             <th></th>
                             <th>回転性</th>
-                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-0" value="0"><label for="4-constitution-memai-kaiten-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-1" value="1"><label for="4-constitution-memai-kaiten-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-2" value="2"><label for="4-constitution-memai-kaiten-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-0" value="0" v-model="answer.constitution_memai_kaiten"><label for="4-constitution-memai-kaiten-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-1" value="1" v-model="answer.constitution_memai_kaiten"><label for="4-constitution-memai-kaiten-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-memai-kaiten" id="4-constitution-memai-kaiten-2" value="2" v-model="answer.constitution_memai_kaiten"><label for="4-constitution-memai-kaiten-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>非回転性</th>
-                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-0" value="0"><label for="4-constitution-memai-hikaiten-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-1" value="1"><label for="4-constitution-memai-hikaiten-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-2" value="2"><label for="4-constitution-memai-hikaiten-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-0" value="0" v-model="answer.constitution_memai_hikaiten"><label for="4-constitution-memai-hikaiten-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-1" value="1" v-model="answer.constitution_memai_hikaiten"><label for="4-constitution-memai-hikaiten-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-memai-hikaiten" id="4-constitution-memai-hikaiten-2" value="2" v-model="answer.constitution_memai_hikaiten"><label for="4-constitution-memai-hikaiten-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">ふらつき</th>
-                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-0" value="0"><label for="4-constitution-furatsuki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-1" value="1"><label for="4-constitution-furatsuki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-2" value="2"><label for="4-constitution-furatsuki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-0" value="0" v-model="answer.constitution_furatsuki"><label for="4-constitution-furatsuki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-1" value="1" v-model="answer.constitution_furatsuki"><label for="4-constitution-furatsuki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-furatsuki" id="4-constitution-furatsuki-2" value="2" v-model="answer.constitution_furatsuki"><label for="4-constitution-furatsuki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">立ち眩み</th>
-                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-0" value="0"><label for="4-constitution-tachikurami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-1" value="1"><label for="4-constitution-tachikurami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-2" value="2"><label for="4-constitution-tachikurami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-0" value="0" v-model="answer.constitution_tachikurami"><label for="4-constitution-tachikurami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-1" value="1" v-model="answer.constitution_tachikurami"><label for="4-constitution-tachikurami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tachikurami" id="4-constitution-tachikurami-2" value="2" v-model="answer.constitution_tachikurami"><label for="4-constitution-tachikurami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">車酔いしやすい</th>
-                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-0" value="0"><label for="4-constitution-kurumayoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-1" value="1"><label for="4-constitution-kurumayoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-2" value="2"><label for="4-constitution-kurumayoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-0" value="0" v-model="answer.constitution_kurumayoi"><label for="4-constitution-kurumayoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-1" value="1" v-model="answer.constitution_kurumayoi"><label for="4-constitution-kurumayoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kurumayoi" id="4-constitution-kurumayoi-2" value="2" v-model="answer.constitution_kurumayoi"><label for="4-constitution-kurumayoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">発作性の発汗</th>
-                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-0" value="0"><label for="4-constitution-hossaseihakkan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-1" value="1"><label for="4-constitution-hossaseihakkan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-2" value="2"><label for="4-constitution-hossaseihakkan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-0" value="0" v-model="answer.constitution_hakkan"><label for="4-constitution-hossaseihakkan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-1" value="1" v-model="answer.constitution_hakkan"><label for="4-constitution-hossaseihakkan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseihakkan" id="4-constitution-hossaseihakkan-2" value="2" v-model="answer.constitution_hakkan"><label for="4-constitution-hossaseihakkan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">発作性の熱感（ホットフラッシュ）</th>
-                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-0" value="0"><label for="4-constitution-hossaseinetsukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-1" value="1"><label for="4-constitution-hossaseinetsukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-2" value="2"><label for="4-constitution-hossaseinetsukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-0" value="0" v-model="answer.constitution_hotflash"><label for="4-constitution-hossaseinetsukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-1" value="1" v-model="answer.constitution_hotflash"><label for="4-constitution-hossaseinetsukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hossaseinetsukan" id="4-constitution-hossaseinetsukan-2" value="2" v-model="answer.constitution_hotflash"><label for="4-constitution-hossaseinetsukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">知覚過敏</th>
-                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-0" value="0"><label for="4-constitution-chikakukabin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-1" value="1"><label for="4-constitution-chikakukabin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-2" value="2"><label for="4-constitution-chikakukabin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-0" value="0" v-model="answer.constitution_chikaku"><label for="4-constitution-chikakukabin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-1" value="1" v-model="answer.constitution_chikaku"><label for="4-constitution-chikakukabin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikakukabin" id="4-constitution-chikakukabin-2" value="2" v-model="answer.constitution_chikaku"><label for="4-constitution-chikakukabin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">知覚麻痺</th>
-                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-0" value="0"><label for="4-constitution-chikakumahi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-1" value="1"><label for="4-constitution-chikakumahi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-2" value="2"><label for="4-constitution-chikakumahi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-0" value="0" v-model="answer.constitution_mahi"><label for="4-constitution-chikakumahi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-1" value="1" v-model="answer.constitution_mahi"><label for="4-constitution-chikakumahi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikakumahi" id="4-constitution-chikakumahi-2" value="2" v-model="answer.constitution_mahi"><label for="4-constitution-chikakumahi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">知覚異常（むずむずなどの異常な感覚）</th>
-                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-0" value="0"><label for="4-constitution-chikakuijou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-1" value="1"><label for="4-constitution-chikakuijou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-2" value="2"><label for="4-constitution-chikakuijou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-0" value="0" v-model="answer.constitution_chikakuijo"><label for="4-constitution-chikakuijou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-1" value="1" v-model="answer.constitution_chikakuijo"><label for="4-constitution-chikakuijou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chikakuijou" id="4-constitution-chikakuijou-2" value="2" v-model="answer.constitution_chikakuijo"><label for="4-constitution-chikakuijou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">ふるえ</th>
-                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-0" value="0"><label for="4-constitution-furue-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-1" value="1"><label for="4-constitution-furue-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-2" value="2"><label for="4-constitution-furue-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-0" value="0" v-model="answer.constitution_furue"><label for="4-constitution-furue-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-1" value="1" v-model="answer.constitution_furue"><label for="4-constitution-furue-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-furue" id="4-constitution-furue-2" value="2" v-model="answer.constitution_furue"><label for="4-constitution-furue-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">ひきつり</th>
-                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-0" value="0"><label for="4-constitution-hikitsuri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-1" value="1"><label for="4-constitution-hikitsuri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-2" value="2"><label for="4-constitution-hikitsuri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-0" value="0" v-model="answer.constitution_hikitsuri"><label for="4-constitution-hikitsuri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-1" value="1" v-model="answer.constitution_hikitsuri"><label for="4-constitution-hikitsuri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hikitsuri" id="4-constitution-hikitsuri-2" value="2" v-model="answer.constitution_hikitsuri"><label for="4-constitution-hikitsuri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">けいれん</th>
-                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-0" value="0"><label for="4-constitution-keiren-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-1" value="1"><label for="4-constitution-keiren-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-2" value="2"><label for="4-constitution-keiren-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-0" value="0" v-model="answer.constitution_keiren"><label for="4-constitution-keiren-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-1" value="1" v-model="answer.constitution_keiren"><label for="4-constitution-keiren-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-keiren" id="4-constitution-keiren-2" value="2" v-model="answer.constitution_keiren"><label for="4-constitution-keiren-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">運動麻痺（身体が動かない）</th>
-                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-0" value="0"><label for="4-constitution-undoumahi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-1" value="1"><label for="4-constitution-undoumahi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-2" value="2"><label for="4-constitution-undoumahi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-0" value="0" v-model="answer.constitution_undoumahi"><label for="4-constitution-undoumahi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-1" value="1" v-model="answer.constitution_undoumahi"><label for="4-constitution-undoumahi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-undoumahi" id="4-constitution-undoumahi-2" value="2" v-model="answer.constitution_undoumahi"><label for="4-constitution-undoumahi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">顔面神経麻痺</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_ganmenmahi"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_ganmenmahi"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_ganmenmahi"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">歩行困難</th>
-                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-0" value="0"><label for="4-constitution-hokoukonnan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-1" value="1"><label for="4-constitution-hokoukonnan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-2" value="2"><label for="4-constitution-hokoukonnan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-0" value="0" v-model="answer.constitution_hokoukonnan"><label for="4-constitution-hokoukonnan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-1" value="1" v-model="answer.constitution_hokoukonnan"><label for="4-constitution-hokoukonnan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hokoukonnan" id="4-constitution-hokoukonnan-2" value="2" v-model="answer.constitution_hokoukonnan"><label for="4-constitution-hokoukonnan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">足のもつれ</th>
-                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-0" value="0"><label for="4-constitution-ashimotsure-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-1" value="1"><label for="4-constitution-ashimotsure-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-2" value="2"><label for="4-constitution-ashimotsure-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-0" value="0" v-model="answer.constitution_ashimotsure"><label for="4-constitution-ashimotsure-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-1" value="1" v-model="answer.constitution_ashimotsure"><label for="4-constitution-ashimotsure-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ashimotsure" id="4-constitution-ashimotsure-2" value="2" v-model="answer.constitution_ashimotsure"><label for="4-constitution-ashimotsure-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">足が上がりにくい</th>
-                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-0" value="0"><label for="4-constitution-ashiagarinikui-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-1" value="1"><label for="4-constitution-ashiagarinikui-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-2" value="2"><label for="4-constitution-ashiagarinikui-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-0" value="0" v-model="answer.constitution_ashiagarinikui"><label for="4-constitution-ashiagarinikui-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-1" value="1" v-model="answer.constitution_ahiagarinikui"><label for="4-constitution-ashiagarinikui-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ashiagarinikui" id="4-constitution-ashiagarinikui-2" value="2" v-model="answer.constitution_ahiagarinikui"><label for="4-constitution-ashiagarinikui-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">つまづきやすい</th>
-                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-0" value="0"><label for="4-constitution-tsumaduki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-1" value="1"><label for="4-constitution-tsumaduki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-2" value="2"><label for="4-constitution-tsumaduki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-0" value="0" v-model="answer.constitution_tsumazuki"><label for="4-constitution-tsumaduki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-1" value="1" v-model="answer.constitution_tsumazuki"><label for="4-constitution-tsumaduki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsumaduki" id="4-constitution-tsumaduki-2" value="2" v-model="answer.constitution_tsumazuki"><label for="4-constitution-tsumaduki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">帯状疱疹後の痛み</th>
-                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-0" value="0"><label for="4-constitution-taijouhoushin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-1" value="1"><label for="4-constitution-taijouhoushin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-2" value="2"><label for="4-constitution-taijouhoushin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-0" value="0" v-model="answer.constitution_taijouhoushin"><label for="4-constitution-taijouhoushin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-1" value="1" v-model="answer.constitution_taijouhoushin"><label for="4-constitution-taijouhoushin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taijouhoushin" id="4-constitution-taijouhoushin-2" value="2" v-model="answer.constitution_taijouhoushin"><label for="4-constitution-taijouhoushin-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -925,73 +925,73 @@
                         <tr>
                             <th></th>
                             <th>圧迫感</th>
-                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-0" value="0"><label for="4-constitution-mune-appakukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-1" value="1"><label for="4-constitution-mune-appakukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-2" value="2"><label for="4-constitution-mune-appakukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-0" value="0" v-model="answer.constitution_mune_appakukan"><label for="4-constitution-mune-appakukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-1" value="1" v-model="answer.constitution_mune_appakukan"><label for="4-constitution-mune-appakukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mune-appakukan" id="4-constitution-mune-appakukan-2" value="2" v-model="answer.constitution_mune_appakukan"><label for="4-constitution-mune-appakukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>つまった感じ</th>
-                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-0" value="0"><label for="4-constitution-mune-tsumatta-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-1" value="1"><label for="4-constitution-mune-tsumatta-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-2" value="2"><label for="4-constitution-mune-tsumatta-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-0" value="0" v-model="answer.constitution_mune_tsumari"><label for="4-constitution-mune-tsumatta-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-1" value="1" v-model="answer.constitution_mune_tsumari"><label for="4-constitution-mune-tsumatta-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mune-tsumatta" id="4-constitution-mune-tsumatta-2" value="2" v-model="answer.constitution_mune_tsumari"><label for="4-constitution-mune-tsumatta-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>しめつけられる感じ</th>
-                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-0" value="0"><label for="4-constitution-mune-shimetsuke-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-1" value="1"><label for="4-constitution-mune-shimetsuke-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-2" value="2"><label for="4-constitution-mune-shimetsuke-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-0" value="0" v-model="answer.constitution_mune_shimetsuke"><label for="4-constitution-mune-shimetsuke-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-1" value="1" v-model="answer.constitution_mune_shimetsuke"><label for="4-constitution-mune-shimetsuke-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mune-shimetsuke" id="4-constitution-mune-shimetsuke-2" value="2" v-model="answer.constitution_mune_shimetsuke"><label for="4-constitution-mune-shimetsuke-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>もやもやした</th>
-                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-0" value="0"><label for="4-constitution-mune-moyamoya-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-1" value="1"><label for="4-constitution-mune-moyamoya-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-2" value="2"><label for="4-constitution-mune-moyamoya-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-0" value="0" v-model="answer.constitution_mune_moyamoya"><label for="4-constitution-mune-moyamoya-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-1" value="1" v-model="answer.constitution_mune_moyamoya"><label for="4-constitution-mune-moyamoya-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mune-moyamoya" id="4-constitution-mune-moyamoya-2" value="2" v-model="answer.constitution_mune_moyamoya"><label for="4-constitution-mune-moyamoya-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他</th>
-                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-0" value="0"><label for="4-constitution-mune-sonota-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-1" value="1"><label for="4-constitution-mune-sonota-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-2" value="2"><label for="4-constitution-mune-sonota-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-0" value="0" v-model="answer.constitution_mune_other"><label for="4-constitution-mune-sonota-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-1" value="1" v-model="answer.constitution_mune_other"><label for="4-constitution-mune-sonota-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mune-sonota" id="4-constitution-mune-sonota-2" value="2" v-model="answer.constitution_mune_other"><label for="4-constitution-mune-sonota-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胸が痛い</th>
-                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-0" value="0"><label for="4-constitution-muneitai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-1" value="1"><label for="4-constitution-muneitai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-2" value="2"><label for="4-constitution-muneitai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-0" value="0" v-model="answer.constitution_muneitai"><label for="4-constitution-muneitai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-1" value="1" v-model="answer.constitution_muneitai"><label for="4-constitution-muneitai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-muneitai" id="4-constitution-muneitai-2" value="2" v-model="answer.constitution_muneitai"><label for="4-constitution-muneitai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">不整脈（脈の乱れ）</th>
-                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-0" value="0"><label for="4-constitution-fuseimyaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-1" value="1"><label for="4-constitution-fuseimyaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-2" value="2"><label for="4-constitution-fuseimyaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-0" value="0" v-model="answer.constitution_fuseimyaku"><label for="4-constitution-fuseimyaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-1" value="1" v-model="answer.constitution_fuseimyaku"><label for="4-constitution-fuseimyaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-fuseimyaku" id="4-constitution-fuseimyaku-2" value="2" v-model="answer.constitution_fuseimyaku"><label for="4-constitution-fuseimyaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">頻脈</th>
-                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-0" value="0"><label for="4-constitution-hinmyaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-1" value="1"><label for="4-constitution-hinmyaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-2" value="2"><label for="4-constitution-hinmyaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-0" value="0" v-model="answer.constitution_hinmyaku"><label for="4-constitution-hinmyaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-1" value="1" v-model="answer.constitution_hinmyaku"><label for="4-constitution-hinmyaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hinmyaku" id="4-constitution-hinmyaku-2" value="2" v-model="answer.constitution_hinmyaku"><label for="4-constitution-hinmyaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">徐脈（脈が遅い）</th>
-                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-0" value="0"><label for="4-constitution-jomyaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-1" value="1"><label for="4-constitution-jomyaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-2" value="2"><label for="4-constitution-jomyaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-0" value="0" v-model="answer.constitution_jomyaku"><label for="4-constitution-jomyaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-1" value="1" v-model="answer.constitution_jomyaku"><label for="4-constitution-jomyaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-jomyaku" id="4-constitution-jomyaku-2" value="2" v-model="answer.constitution_jomyaku"><label for="4-constitution-jomyaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">動悸（拍動を感じる）</th>
-                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-0" value="0"><label for="4-constitution-douki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-1" value="1"><label for="4-constitution-douki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-2" value="2"><label for="4-constitution-douki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-0" value="0" v-model="answer.constitution_douki"><label for="4-constitution-douki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-1" value="1" v-model="answer.constitution_douki"><label for="4-constitution-douki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-douki" id="4-constitution-douki-2" value="2" v-model="answer.constitution_douki"><label for="4-constitution-douki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">静脈瘤</th>
-                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-0" value="0"><label for="4-constitution-joumyakuryu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-1" value="1"><label for="4-constitution-joumyakuryu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-2" value="2"><label for="4-constitution-joumyakuryu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-0" value="0" v-model="answer.constitution_joumyakuryu"><label for="4-constitution-joumyakuryu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-1" value="1" v-model="answer.constitution_joumyakuryu"><label for="4-constitution-joumyakuryu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-joumyakuryu" id="4-constitution-joumyakuryu-2" value="2" v-model="answer.constitution_joumyakuryu"><label for="4-constitution-joumyakuryu-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1006,16 +1006,16 @@
                         <tr>
                             <th></th>
                             <th>空咳</th>
-                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-0" value="0"><label for="4-constitution-seki-karazeki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-1" value="1"><label for="4-constitution-seki-karazeki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-2" value="2"><label for="4-constitution-seki-karazeki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-0" value="0" v-model="answer.constitution_"><label for="4-constitution-seki-karazeki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-1" value="1" v-model="answer.constitution_"><label for="4-constitution-seki-karazeki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-seki-karazeki" id="4-constitution-seki-karazeki-2" value="2" v-model="answer.constitution_"><label for="4-constitution-seki-karazeki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>痰がからむ</th>
-                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-0" value="0"><label for="4-constitution-seki-tan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-1" value="1"><label for="4-constitution-seki-tan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-2" value="2"><label for="4-constitution-seki-tan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-seki-tan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-seki-tan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-seki-tan" id="4-constitution-seki-tan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-seki-tan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">痰</th>
@@ -1023,23 +1023,23 @@
                         <tr>
                             <th></th>
                             <th>水のような</th>
-                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-0" value="0"><label for="4-constitution-tan-mizu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-1" value="1"><label for="4-constitution-tan-mizu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-2" value="2"><label for="4-constitution-tan-mizu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tan-mizu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tan-mizu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tan-mizu" id="4-constitution-tan-mizu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tan-mizu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>粘っこい</th>
-                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-0" value="0"><label for="4-constitution-tan-nebakkoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-1" value="1"><label for="4-constitution-tan-nebakkoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-2" value="2"><label for="4-constitution-tan-nebakkoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tan-nebakkoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tan-nebakkoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tan-nebakkoi" id="4-constitution-tan-nebakkoi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tan-nebakkoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膿のような</th>
-                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-0" value="0"><label for="4-constitution-tan-umi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-1" value="1"><label for="4-constitution-tan-umi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-2" value="2"><label for="4-constitution-tan-umi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tan-umi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tan-umi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tan-umi" id="4-constitution-tan-umi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tan-umi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">呼吸困難</th>
@@ -1047,46 +1047,46 @@
                         <tr>
                             <th></th>
                             <th>安静時</th>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-0" value="0"><label for="4-constitution-kokyukonnan-ansei-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-1" value="1"><label for="4-constitution-kokyukonnan-ansei-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-2" value="2"><label for="4-constitution-kokyukonnan-ansei-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-ansei-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-ansei-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-ansei" id="4-constitution-kokyukonnan-ansei-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-ansei-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>運動時</th>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-0" value="0"><label for="4-constitution-kokyukonnan-undou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-1" value="1"><label for="4-constitution-kokyukonnan-undou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-2" value="2"><label for="4-constitution-kokyukonnan-undou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-undou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-undou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kokyukonnan-undou" id="4-constitution-kokyukonnan-undou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kokyukonnan-undou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">血痰</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">喀血</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">息切れ</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">起座呼吸（座位にしていないと苦しい）</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">チアノーゼ</th>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0"><label for="4-constitution-nease-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1"><label for="4-constitution-nease-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2"><label for="4-constitution-nease-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nease-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nease-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nease" id="4-constitution-nease-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nease-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1096,87 +1096,87 @@
                     </thead>
                     <tbody>                        <tr>
                             <th colspan="2">食後に眠気やだるさを感じる</th>
-                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-0" value="0"><label for="4-constitution-syokugodarui-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-1" value="1"><label for="4-constitution-syokugodarui-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-2" value="2"><label for="4-constitution-syokugodarui-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-0" value="0" v-model="answer.constitution_"><label for="4-constitution-syokugodarui-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-1" value="1" v-model="answer.constitution_"><label for="4-constitution-syokugodarui-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-syokugodarui" id="4-constitution-syokugodarui-2" value="2" v-model="answer.constitution_"><label for="4-constitution-syokugodarui-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">食べ過ぎるとすぐ胃腸の調子が悪くなる</th>
-                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-0" value="0"><label for="4-constitution-tabesugi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-1" value="1"><label for="4-constitution-tabesugi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-2" value="2"><label for="4-constitution-tabesugi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tabesugi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tabesugi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tabesugi" id="4-constitution-tabesugi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tabesugi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">すぐ下痢をする</th>
-                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-0" value="0"><label for="4-constitution-geri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-1" value="1"><label for="4-constitution-geri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-2" value="2"><label for="4-constitution-geri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-0" value="0" v-model="answer.constitution_"><label for="4-constitution-geri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-1" value="1" v-model="answer.constitution_"><label for="4-constitution-geri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-geri" id="4-constitution-geri-2" value="2" v-model="answer.constitution_"><label for="4-constitution-geri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">少し食べると腹が張って食べられない</th>
-                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-0" value="0"><label for="4-constitution-taberutoharahari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-1" value="1"><label for="4-constitution-taberutoharahari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-2" value="2"><label for="4-constitution-taberutoharahari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-taberutoharahari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-taberutoharahari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taberutoharahari" id="4-constitution-taberutoharahari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-taberutoharahari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">嘔吐</th>
-                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-0" value="0"><label for="4-constitution-outo-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-1" value="1"><label for="4-constitution-outo-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-2" value="2"><label for="4-constitution-outo-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-0" value="0" v-model="answer.constitution_"><label for="4-constitution-outo-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-1" value="1" v-model="answer.constitution_"><label for="4-constitution-outo-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-outo" id="4-constitution-outo-2" value="2" v-model="answer.constitution_"><label for="4-constitution-outo-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">吐血</th>
-                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-0" value="0"><label for="4-constitution-toketsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-1" value="1"><label for="4-constitution-toketsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-2" value="2"><label for="4-constitution-toketsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-toketsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-toketsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-toketsu" id="4-constitution-toketsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-toketsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">呑気症（空気を飲んでしまう）</th>
-                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-0" value="0"><label for="4-constitution-donkishou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-1" value="1"><label for="4-constitution-donkishou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-2" value="2"><label for="4-constitution-donkishou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-donkishou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-donkishou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-donkishou" id="4-constitution-donkishou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-donkishou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">げっぷ</th>
-                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-0" value="0"><label for="4-constitution-geppu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-1" value="1"><label for="4-constitution-geppu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-2" value="2"><label for="4-constitution-geppu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-geppu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-geppu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-geppu" id="4-constitution-geppu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-geppu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">悪心・吐き気</th>
-                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-0" value="0"><label for="4-constitution-akushin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-1" value="1"><label for="4-constitution-akushin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-2" value="2"><label for="4-constitution-akushin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-akushin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-akushin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-akushin" id="4-constitution-akushin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-akushin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胸やけ</th>
-                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-0" value="0"><label for="4-constitution-muneyake-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-1" value="1"><label for="4-constitution-muneyake-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-2" value="2"><label for="4-constitution-muneyake-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-0" value="0" v-model="answer.constitution_"><label for="4-constitution-muneyake-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-1" value="1" v-model="answer.constitution_"><label for="4-constitution-muneyake-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-muneyake" id="4-constitution-muneyake-2" value="2" v-model="answer.constitution_"><label for="4-constitution-muneyake-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胃酸が上がってくる</th>
-                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-0" value="0"><label for="4-constitution-isan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-1" value="1"><label for="4-constitution-isan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-2" value="2"><label for="4-constitution-isan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-isan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-isan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-isan" id="4-constitution-isan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-isan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胃もたれ</th>
-                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-0" value="0"><label for="4-constitution-imotare-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-1" value="1"><label for="4-constitution-imotare-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-2" value="2"><label for="4-constitution-imotare-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-0" value="0" v-model="answer.constitution_"><label for="4-constitution-imotare-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-1" value="1" v-model="answer.constitution_"><label for="4-constitution-imotare-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-imotare" id="4-constitution-imotare-2" value="2" v-model="answer.constitution_"><label for="4-constitution-imotare-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胃の不快感</th>
-                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-0" value="0"><label for="4-constitution-inofukaikan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-1" value="1"><label for="4-constitution-inofukaikan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-2" value="2"><label for="4-constitution-inofukaikan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-inofukaikan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-inofukaikan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-inofukaikan" id="4-constitution-inofukaikan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-inofukaikan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">食べ物が胸につかえる</th>
-                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-0" value="0"><label for="4-constitution-tabemonomunetukae-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-1" value="1"><label for="4-constitution-tabemonomunetukae-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-2" value="2"><label for="4-constitution-tabemonomunetukae-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tabemonomunetukae-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tabemonomunetukae-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tabemonomunetukae" id="4-constitution-tabemonomunetukae-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tabemonomunetukae-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">腹痛</th>
@@ -1184,83 +1184,83 @@
                         <tr>
                             <th></th>
                             <th>上腹</th>
-                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-0" value="0"><label for="4-constitution-hukutsuu-uebara-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-1" value="1"><label for="4-constitution-hukutsuu-uebara-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-2" value="2"><label for="4-constitution-hukutsuu-uebara-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-uebara-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-uebara-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-uebara" id="4-constitution-hukutsuu-uebara-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-uebara-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>下腹</th>
-                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-0" value="0"><label for="4-constitution-hukutsuu-shitabara-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-1" value="1"><label for="4-constitution-hukutsuu-shitabara-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-2" value="2"><label for="4-constitution-hukutsuu-shitabara-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-shitabara-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-shitabara-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-shitabara" id="4-constitution-hukutsuu-shitabara-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-shitabara-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>移動性</th>
-                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-0" value="0"><label for="4-constitution-hukutsuu-idousei-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-1" value="1"><label for="4-constitution-hukutsuu-idousei-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-2" value="2"><label for="4-constitution-hukutsuu-idousei-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-idousei-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-idousei-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hukutsuu-idousei" id="4-constitution-hukutsuu-idousei-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hukutsuu-idousei-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">季肋部（肋骨の一番下当たり）の痛み</th>
-                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-0" value="0"><label for="4-constitution-kirokubuitami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-1" value="1"><label for="4-constitution-kirokubuitami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-2" value="2"><label for="4-constitution-kirokubuitami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kirokubuitami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kirokubuitami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubuitami" id="4-constitution-kirokubuitami-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kirokubuitami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">季肋部が苦しい</th>
-                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-0" value="0"><label for="4-constitution-kirokubukurushii-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-1" value="1"><label for="4-constitution-kirokubukurushii-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-2" value="2"><label for="4-constitution-kirokubukurushii-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kirokubukurushii-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kirokubukurushii-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kirokubukurushii" id="4-constitution-kirokubukurushii-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kirokubukurushii-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">腹がごろごろする</th>
-                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-0" value="0"><label for="4-constitution-haragagorogoro-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-1" value="1"><label for="4-constitution-haragagorogoro-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-2" value="2"><label for="4-constitution-haragagorogoro-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-0" value="0" v-model="answer.constitution_"><label for="4-constitution-haragagorogoro-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-1" value="1" v-model="answer.constitution_"><label for="4-constitution-haragagorogoro-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-haragagorogoro" id="4-constitution-haragagorogoro-2" value="2" v-model="answer.constitution_"><label for="4-constitution-haragagorogoro-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">放屁（おなら）</th>
-                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-0" value="0"><label for="4-constitution-houhi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-1" value="1"><label for="4-constitution-houhi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-2" value="2"><label for="4-constitution-houhi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-houhi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-houhi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-houhi" id="4-constitution-houhi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-houhi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">便意を頻回に催す</th>
-                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-0" value="0"><label for="4-constitution-benihinkai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-1" value="1"><label for="4-constitution-benihinkai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-2" value="2"><label for="4-constitution-benihinkai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-benihinkai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-benihinkai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-benihinkai" id="4-constitution-benihinkai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-benihinkai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">血便</th>
-                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-0" value="0"><label for="4-constitution-ketsuben-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-1" value="1"><label for="4-constitution-ketsuben-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-2" value="2"><label for="4-constitution-ketsuben-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ketsuben-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ketsuben-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ketsuben" id="4-constitution-ketsuben-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ketsuben-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">下血</th>
-                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-0" value="0"><label for="4-constitution-geketsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-1" value="1"><label for="4-constitution-geketsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-2" value="2"><label for="4-constitution-geketsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-geketsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-geketsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-geketsu" id="4-constitution-geketsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-geketsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">痔</th>
-                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-0" value="0"><label for="4-constitution-ji-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-1" value="1"><label for="4-constitution-ji-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-2" value="2"><label for="4-constitution-ji-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ji-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ji-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ji" id="4-constitution-ji-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ji-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">脱肛</th>
-                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-0" value="0"><label for="4-constitution-dakkou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-1" value="1"><label for="4-constitution-dakkou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-2" value="2"><label for="4-constitution-dakkou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-dakkou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-dakkou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-dakkou" id="4-constitution-dakkou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-dakkou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">肛門痛</th>
-                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-0" value="0"><label for="4-constitution-koumontsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-1" value="1"><label for="4-constitution-koumontsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-2" value="2"><label for="4-constitution-koumontsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koumontsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koumontsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koumontsuu" id="4-constitution-koumontsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koumontsuu-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1271,87 +1271,87 @@
                     <tbody>
                         <tr>
                             <th colspan="2">眼痛</th>
-                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-0" value="0"><label for="4-constitution-ganntsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-1" value="1"><label for="4-constitution-ganntsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-2" value="2"><label for="4-constitution-ganntsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ganntsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ganntsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ganntsuu" id="4-constitution-ganntsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ganntsuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">視力低下</th>
-                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-0" value="0"><label for="4-constitution-shisyokuteika-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-1" value="1"><label for="4-constitution-shisyokuteika-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-2" value="2"><label for="4-constitution-shisyokuteika-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shisyokuteika-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shisyokuteika-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shisyokuteika" id="4-constitution-shisyokuteika-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shisyokuteika-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目の疲れ</th>
-                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-0" value="0"><label for="4-constitution-menotsukare-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-1" value="1"><label for="4-constitution-menotsukare-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-2" value="2"><label for="4-constitution-menotsukare-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menotsukare-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menotsukare-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menotsukare" id="4-constitution-menotsukare-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menotsukare-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目のかすみ</th>
-                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-0" value="0"><label for="4-constitution-menokasumi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-1" value="1"><label for="4-constitution-menokasumi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-2" value="2"><label for="4-constitution-menokasumi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menokasumi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menokasumi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menokasumi" id="4-constitution-menokasumi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menokasumi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目の充血</th>
-                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-0" value="0"><label for="4-constitution-menojuuketsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-1" value="1"><label for="4-constitution-menojuuketsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-2" value="2"><label for="4-constitution-menojuuketsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menojuuketsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menojuuketsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menojuuketsu" id="4-constitution-menojuuketsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menojuuketsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目のかゆみ</th>
-                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-0" value="0"><label for="4-constitution-menokayumi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-1" value="1"><label for="4-constitution-menokayumi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-2" value="2"><label for="4-constitution-menokayumi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menokayumi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menokayumi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menokayumi" id="4-constitution-menokayumi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menokayumi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目の乾燥</th>
-                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-0" value="0"><label for="4-constitution-menokansou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-1" value="1"><label for="4-constitution-menokansou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-2" value="2"><label for="4-constitution-menokansou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menokansou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menokansou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menokansou" id="4-constitution-menokansou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menokansou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">まぶしい</th>
-                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-0" value="0"><label for="4-constitution-mabushii-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-1" value="1"><label for="4-constitution-mabushii-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-2" value="2"><label for="4-constitution-mabushii-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-0" value="0" v-model="answer.constitution_"><label for="4-constitution-mabushii-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-1" value="1" v-model="answer.constitution_"><label for="4-constitution-mabushii-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mabushii" id="4-constitution-mabushii-2" value="2" v-model="answer.constitution_"><label for="4-constitution-mabushii-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目のゴロゴロ感</th>
-                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-0" value="0"><label for="4-constitution-menogorogoro-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-1" value="1"><label for="4-constitution-menogorogoro-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-2" value="2"><label for="4-constitution-menogorogoro-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menogorogoro-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menogorogoro-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menogorogoro" id="4-constitution-menogorogoro-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menogorogoro-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目のヒリヒリ感</th>
-                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-0" value="0"><label for="4-constitution-menohirihiri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-1" value="1"><label for="4-constitution-menohirihiri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-2" value="2"><label for="4-constitution-menohirihiri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menohirihiri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menohirihiri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menohirihiri" id="4-constitution-menohirihiri-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menohirihiri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">目やに</th>
-                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-0" value="0"><label for="4-constitution-meyani-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-1" value="1"><label for="4-constitution-meyani-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-2" value="2"><label for="4-constitution-meyani-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-0" value="0" v-model="answer.constitution_"><label for="4-constitution-meyani-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-1" value="1" v-model="answer.constitution_"><label for="4-constitution-meyani-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-meyani" id="4-constitution-meyani-2" value="2" v-model="answer.constitution_"><label for="4-constitution-meyani-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">眼瞼下垂</th>
-                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-0" value="0"><label for="4-constitution-gankenkasui-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-1" value="1"><label for="4-constitution-gankenkasui-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-2" value="2"><label for="4-constitution-gankenkasui-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-0" value="0" v-model="answer.constitution_"><label for="4-constitution-gankenkasui-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-1" value="1" v-model="answer.constitution_"><label for="4-constitution-gankenkasui-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-gankenkasui" id="4-constitution-gankenkasui-2" value="2" v-model="answer.constitution_"><label for="4-constitution-gankenkasui-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">複視（物が二重に見える）</th>
-                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-0" value="0"><label for="4-constitution-fukushi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-1" value="1"><label for="4-constitution-fukushi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-2" value="2"><label for="4-constitution-fukushi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-fukushi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-fukushi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-fukushi" id="4-constitution-fukushi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-fukushi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">視野狭窄</th>
-                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-0" value="0"><label for="4-constitution-siyakyousaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-1" value="1"><label for="4-constitution-siyakyousaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-2" value="2"><label for="4-constitution-siyakyousaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-0" value="0" v-model="answer.constitution_"><label for="4-constitution-siyakyousaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-1" value="1" v-model="answer.constitution_"><label for="4-constitution-siyakyousaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-siyakyousaku" id="4-constitution-siyakyousaku-2" value="2" v-model="answer.constitution_"><label for="4-constitution-siyakyousaku-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1362,39 +1362,39 @@
                     <tbody>
                         <tr>
                             <th colspan="2">耳鳴り</th>
-                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-0" value="0"><label for="4-constitution-miminari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-1" value="1"><label for="4-constitution-miminari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-2" value="2"><label for="4-constitution-miminari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-miminari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-miminari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-miminari" id="4-constitution-miminari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-miminari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">頭鳴</th>
-                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-0" value="0"><label for="4-constitution-atamanari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-1" value="1"><label for="4-constitution-atamanari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-2" value="2"><label for="4-constitution-atamanari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-atamanari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-atamanari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-atamanari" id="4-constitution-atamanari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-atamanari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">耳閉感</th>
-                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-0" value="0"><label for="4-constitution-jiheikan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-1" value="1"><label for="4-constitution-jiheikan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-2" value="2"><label for="4-constitution-jiheikan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-jiheikan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-jiheikan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-jiheikan" id="4-constitution-jiheikan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-jiheikan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">難聴</th>
-                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-0" value="0"><label for="4-constitution-nanchou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-1" value="1"><label for="4-constitution-nanchou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-2" value="2"><label for="4-constitution-nanchou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nanchou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nanchou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nanchou" id="4-constitution-nanchou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nanchou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">耳垂れ</th>
-                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-0" value="0"><label for="4-constitution-mimidare-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-1" value="1"><label for="4-constitution-mimidare-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-2" value="2"><label for="4-constitution-mimidare-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-0" value="0" v-model="answer.constitution_"><label for="4-constitution-mimidare-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-1" value="1" v-model="answer.constitution_"><label for="4-constitution-mimidare-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-mimidare" id="4-constitution-mimidare-2" value="2" v-model="answer.constitution_"><label for="4-constitution-mimidare-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">くしゃみ</th>
-                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-0" value="0"><label for="4-constitution-kushami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-1" value="1"><label for="4-constitution-kushami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-2" value="2"><label for="4-constitution-kushami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kushami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kushami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kushami" id="4-constitution-kushami-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kushami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">鼻汁</th>
@@ -1402,173 +1402,173 @@
                         <tr>
                             <th></th>
                             <th>水のような</th>
-                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-0" value="0"><label for="4-constitution-hanajiru-mizunoyouna-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-1" value="1"><label for="4-constitution-hanajiru-mizunoyouna-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-2" value="2"><label for="4-constitution-hanajiru-mizunoyouna-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanajiru-mizunoyouna-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanajiru-mizunoyouna-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-mizunoyouna" id="4-constitution-hanajiru-mizunoyouna-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanajiru-mizunoyouna-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>粘っこい</th>
-                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-0" value="0"><label for="4-constitution-hanajiru-nebakkoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-1" value="1"><label for="4-constitution-hanajiru-nebakkoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-2" value="2"><label for="4-constitution-hanajiru-nebakkoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanajiru-nebakkoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanajiru-nebakkoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-nebakkoi" id="4-constitution-hanajiru-nebakkoi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanajiru-nebakkoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膿のような</th>
-                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-0" value="0"><label for="4-constitution-hanajiru-umi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-1" value="1"><label for="4-constitution-hanajiru-umi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-2" value="2"><label for="4-constitution-hanajiru-umi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanajiru-umi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanajiru-umi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanajiru-umi" id="4-constitution-hanajiru-umi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanajiru-umi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">鼻づまり</th>
-                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-0" value="0"><label for="4-constitution-hanazumari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-1" value="1"><label for="4-constitution-hanazumari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-2" value="2"><label for="4-constitution-hanazumari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanazumari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanazumari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanazumari" id="4-constitution-hanazumari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanazumari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">鼻が重い</th>
-                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-0" value="0"><label for="4-constitution-hanaomoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-1" value="1"><label for="4-constitution-hanaomoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-2" value="2"><label for="4-constitution-hanaomoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanaomoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanaomoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanaomoi" id="4-constitution-hanaomoi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanaomoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">後鼻漏（鼻汁がのどに落ちる）</th>
-                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-0" value="0"><label for="4-constitution-koubirou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-1" value="1"><label for="4-constitution-koubirou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-2" value="2"><label for="4-constitution-koubirou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koubirou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koubirou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koubirou" id="4-constitution-koubirou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koubirou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">鼻出血</th>
-                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-0" value="0"><label for="4-constitution-hanashukketsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-1" value="1"><label for="4-constitution-hanashukketsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-2" value="2"><label for="4-constitution-hanashukketsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hanashukketsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hanashukketsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hanashukketsu" id="4-constitution-hanashukketsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hanashukketsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">いびき</th>
-                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-0" value="0"><label for="4-constitution-ibiki-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-1" value="1"><label for="4-constitution-ibiki-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-2" value="2"><label for="4-constitution-ibiki-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ibiki-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ibiki-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ibiki" id="4-constitution-ibiki-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ibiki-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">臭いがわからない</th>
-                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-0" value="0"><label for="4-constitution-nioiwakaranai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-1" value="1"><label for="4-constitution-nioiwakaranai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-2" value="2"><label for="4-constitution-nioiwakaranai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nioiwakaranai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nioiwakaranai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nioiwakaranai" id="4-constitution-nioiwakaranai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nioiwakaranai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">味がしない</th>
-                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-0" value="0"><label for="4-constitution-ajishinai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-1" value="1"><label for="4-constitution-ajishinai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-2" value="2"><label for="4-constitution-ajishinai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ajishinai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ajishinai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ajishinai" id="4-constitution-ajishinai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ajishinai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">味がおかしい</th>
-                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-0" value="0"><label for="4-constitution-ajiokashii-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-1" value="1"><label for="4-constitution-ajiokashii-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-2" value="2"><label for="4-constitution-ajiokashii-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ajiokashii-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ajiokashii-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ajiokashii" id="4-constitution-ajiokashii-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ajiokashii-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">くちびるが乾く</th>
-                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-0" value="0"><label for="4-constitution-kuchibirukawaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-1" value="1"><label for="4-constitution-kuchibirukawaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-2" value="2"><label for="4-constitution-kuchibirukawaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kuchibirukawaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kuchibirukawaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kuchibirukawaku" id="4-constitution-kuchibirukawaku-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kuchibirukawaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">口渇（水を飲みたい）</th>
-                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-0" value="0"><label for="4-constitution-koukatsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-1" value="1"><label for="4-constitution-koukatsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-2" value="2"><label for="4-constitution-koukatsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koukatsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koukatsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koukatsu" id="4-constitution-koukatsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koukatsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">口乾（口を湿らせたい）</th>
-                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-0" value="0"><label for="4-constitution-koukan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-1" value="1"><label for="4-constitution-koukan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-2" value="2"><label for="4-constitution-koukan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koukan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koukan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koukan" id="4-constitution-koukan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koukan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">口の苦み・粘つき</th>
-                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-0" value="0"><label for="4-constitution-kuchinigami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-1" value="1"><label for="4-constitution-kuchinigami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-2" value="2"><label for="4-constitution-kuchinigami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kuchinigami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kuchinigami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kuchinigami" id="4-constitution-kuchinigami-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kuchinigami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">口臭</th>
-                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-0" value="0"><label for="4-constitution-koushuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-1" value="1"><label for="4-constitution-koushuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-2" value="2"><label for="4-constitution-koushuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koushuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koushuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koushuu" id="4-constitution-koushuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koushuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">口内炎</th>
-                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-0" value="0"><label for="4-constitution-kounaien-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-1" value="1"><label for="4-constitution-kounaien-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-2" value="2"><label for="4-constitution-kounaien-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kounaien-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kounaien-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kounaien" id="4-constitution-kounaien-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kounaien-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">舌がしみる</th>
-                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-0" value="0"><label for="4-constitution-shitashimiru-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-1" value="1"><label for="4-constitution-shitashimiru-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-2" value="2"><label for="4-constitution-shitashimiru-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shitashimiru-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shitashimiru-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shitashimiru" id="4-constitution-shitashimiru-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shitashimiru-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">舌痛</th>
-                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-0" value="0"><label for="4-constitution-zetsutsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-1" value="1"><label for="4-constitution-zetsutsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-2" value="2"><label for="4-constitution-zetsutsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-zetsutsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-zetsutsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-zetsutsuu" id="4-constitution-zetsutsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-zetsutsuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">歯痛</th>
-                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-0" value="0"><label for="4-constitution-shitsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-1" value="1"><label for="4-constitution-shitsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-2" value="2"><label for="4-constitution-shitsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shitsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shitsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shitsuu" id="4-constitution-shitsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shitsuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">歯ぐきの痛み</th>
-                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-0" value="0"><label for="4-constitution-hagukiitami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-1" value="1"><label for="4-constitution-hagukiitami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-2" value="2"><label for="4-constitution-hagukiitami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hagukiitami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hagukiitami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hagukiitami" id="4-constitution-hagukiitami-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hagukiitami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">嚥下困難</th>
-                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-0" value="0"><label for="4-constitution-engekonnan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-1" value="1"><label for="4-constitution-engekonnan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-2" value="2"><label for="4-constitution-engekonnan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-engekonnan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-engekonnan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-engekonnan" id="4-constitution-engekonnan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-engekonnan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">のどの痛み</th>
-                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-0" value="0"><label for="4-constitution-nodoitami-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-1" value="1"><label for="4-constitution-nodoitami-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-2" value="2"><label for="4-constitution-nodoitami-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nodoitami-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nodoitami-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nodoitami" id="4-constitution-nodoitami-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nodoitami-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">のどの奥の乾燥</th>
-                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-0" value="0"><label for="4-constitution-nodookukansou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-1" value="1"><label for="4-constitution-nodookukansou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-2" value="2"><label for="4-constitution-nodookukansou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nodookukansou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nodookukansou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nodookukansou" id="4-constitution-nodookukansou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nodookukansou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">のどのつまった感じ</th>
-                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-0" value="0"><label for="4-constitution-nodotsumatta-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-1" value="1"><label for="4-constitution-nodotsumatta-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-2" value="2"><label for="4-constitution-nodotsumatta-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nodotsumatta-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nodotsumatta-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nodotsumatta" id="4-constitution-nodotsumatta-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nodotsumatta-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">のどのイガイガ</th>
-                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-0" value="0"><label for="4-constitution-nodoigaiga-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-1" value="1"><label for="4-constitution-nodoigaiga-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-2" value="2"><label for="4-constitution-nodoigaiga-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nodoigaiga-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nodoigaiga-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nodoigaiga" id="4-constitution-nodoigaiga-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nodoigaiga-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">しゃっくり</th>
-                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-0" value="0"><label for="4-constitution-shakkuri-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-1" value="1"><label for="4-constitution-shakkuri-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-2" value="2"><label for="4-constitution-shakkuri-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shakkuri-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shakkuri-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shakkuri" id="4-constitution-shakkuri-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shakkuri-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">声かすれ</th>
-                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-0" value="0"><label for="4-constitution-koekasure-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-1" value="1"><label for="4-constitution-koekasure-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-2" value="2"><label for="4-constitution-koekasure-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-0" value="0" v-model="answer.constitution_"><label for="4-constitution-koekasure-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-1" value="1" v-model="answer.constitution_"><label for="4-constitution-koekasure-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-koekasure" id="4-constitution-koekasure-2" value="2" v-model="answer.constitution_"><label for="4-constitution-koekasure-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1579,93 +1579,93 @@
                     <tbody>
                         <tr>
                             <th colspan="2">発疹・湿疹</th>
-                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-0" value="0"><label for="4-constitution-hasshin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-1" value="1"><label for="4-constitution-hasshin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-2" value="2"><label for="4-constitution-hasshin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hasshin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hasshin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hasshin" id="4-constitution-hasshin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hasshin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">にきび</th>
-                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-0" value="0"><label for="4-constitution-nikibi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-1" value="1"><label for="4-constitution-nikibi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-2" value="2"><label for="4-constitution-nikibi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nikibi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nikibi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nikibi" id="4-constitution-nikibi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nikibi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">アトピー性皮膚炎</th>
-                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-0" value="0"><label for="4-constitution-atopy-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-1" value="1"><label for="4-constitution-atopy-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-2" value="2"><label for="4-constitution-atopy-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-0" value="0" v-model="answer.constitution_"><label for="4-constitution-atopy-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-1" value="1" v-model="answer.constitution_"><label for="4-constitution-atopy-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-atopy" id="4-constitution-atopy-2" value="2" v-model="answer.constitution_"><label for="4-constitution-atopy-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">じんましん</th>
-                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-0" value="0"><label for="4-constitution-jinmashin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-1" value="1"><label for="4-constitution-jinmashin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-2" value="2"><label for="4-constitution-jinmashin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-jinmashin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-jinmashin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-jinmashin" id="4-constitution-jinmashin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-jinmashin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">しもやけ</th>
-                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-0" value="0"><label for="4-constitution-shimoyake-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-1" value="1"><label for="4-constitution-shimoyake-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-2" value="2"><label for="4-constitution-shimoyake-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shimoyake-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shimoyake-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shimoyake" id="4-constitution-shimoyake-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shimoyake-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">肌荒れ</th>
-                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-0" value="0"><label for="4-constitution-hadaare-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-1" value="1"><label for="4-constitution-hadaare-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-2" value="2"><label for="4-constitution-hadaare-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hadaare-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hadaare-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hadaare" id="4-constitution-hadaare-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hadaare-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">皮膚の乾燥</th>
-                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-0" value="0"><label for="4-constitution-hifukansou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-1" value="1"><label for="4-constitution-hifukansou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-2" value="2"><label for="4-constitution-hifukansou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hifukansou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hifukansou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hifukansou" id="4-constitution-hifukansou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hifukansou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">皮膚のかゆみ</th>
-                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-0" value="0"><label for="4-constitution-hifukayumi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-1" value="1"><label for="4-constitution-hifukayumi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-2" value="2"><label for="4-constitution-hifukayumi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hifukayumi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hifukayumi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hifukayumi" id="4-constitution-hifukayumi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hifukayumi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">皮膚が脂っぽい</th>
-                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-0" value="0"><label for="4-constitution-hifuabura-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-1" value="1"><label for="4-constitution-hifuabura-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-2" value="2"><label for="4-constitution-hifuabura-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hifuabura-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hifuabura-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hifuabura" id="4-constitution-hifuabura-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hifuabura-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">色素沈着（しみ）</th>
-                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-0" value="0"><label for="4-constitution-shikisochinchaku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-1" value="1"><label for="4-constitution-shikisochinchaku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-2" value="2"><label for="4-constitution-shikisochinchaku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shikisochinchaku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shikisochinchaku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shikisochinchaku" id="4-constitution-shikisochinchaku-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shikisochinchaku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">脱色</th>
-                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-0" value="0"><label for="4-constitution-dasshoku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-1" value="1"><label for="4-constitution-dasshoku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-2" value="2"><label for="4-constitution-dasshoku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-0" value="0" v-model="answer.constitution_"><label for="4-constitution-dasshoku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-1" value="1" v-model="answer.constitution_"><label for="4-constitution-dasshoku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-dasshoku" id="4-constitution-dasshoku-2" value="2" v-model="answer.constitution_"><label for="4-constitution-dasshoku-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">眼のクマ</th>
-                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-0" value="0"><label for="4-constitution-menokuma-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-1" value="1"><label for="4-constitution-menokuma-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-2" value="2"><label for="4-constitution-menokuma-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-0" value="0" v-model="answer.constitution_"><label for="4-constitution-menokuma-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-1" value="1" v-model="answer.constitution_"><label for="4-constitution-menokuma-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-menokuma" id="4-constitution-menokuma-2" value="2" v-model="answer.constitution_"><label for="4-constitution-menokuma-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">あざができやすい</th>
-                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-0" value="0"><label for="4-constitution-aza-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-1" value="1"><label for="4-constitution-aza-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-2" value="2"><label for="4-constitution-aza-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-0" value="0" v-model="answer.constitution_"><label for="4-constitution-aza-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-1" value="1" v-model="answer.constitution_"><label for="4-constitution-aza-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-aza" id="4-constitution-aza-2" value="2" v-model="answer.constitution_"><label for="4-constitution-aza-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">皮下出血</th>
-                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-0" value="0"><label for="4-constitution-hikashukketsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-1" value="1"><label for="4-constitution-hikashukketsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-2" value="2"><label for="4-constitution-hikashukketsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hikashukketsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hikashukketsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hikashukketsu" id="4-constitution-hikashukketsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hikashukketsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">苔癬</th>
-                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-0" value="0"><label for="4-constitution-taisen-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-1" value="1"><label for="4-constitution-taisen-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-2" value="2"><label for="4-constitution-taisen-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-0" value="0" v-model="answer.constitution_"><label for="4-constitution-taisen-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-1" value="1" v-model="answer.constitution_"><label for="4-constitution-taisen-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taisen" id="4-constitution-taisen-2" value="2" v-model="answer.constitution_"><label for="4-constitution-taisen-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">脱毛</th>
@@ -1673,70 +1673,70 @@
                         <tr>
                             <th></th>
                             <th>円形</th>
-                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-0" value="0"><label for="4-constitution-datsumou-enkei-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-1" value="1"><label for="4-constitution-datsumou-enkei-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-2" value="2"><label for="4-constitution-datsumou-enkei-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-0" value="0" v-model="answer.constitution_"><label for="4-constitution-datsumou-enkei-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-1" value="1" v-model="answer.constitution_"><label for="4-constitution-datsumou-enkei-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-enkei" id="4-constitution-datsumou-enkei-2" value="2" v-model="answer.constitution_"><label for="4-constitution-datsumou-enkei-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>全般に抜ける</th>
-                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-0" value="0"><label for="4-constitution-datsumou-zenpan-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-1" value="1"><label for="4-constitution-datsumou-zenpan-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-2" value="2"><label for="4-constitution-datsumou-zenpan-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-0" value="0" v-model="answer.constitution_"><label for="4-constitution-datsumou-zenpan-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-1" value="1" v-model="answer.constitution_"><label for="4-constitution-datsumou-zenpan-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-datsumou-zenpan" id="4-constitution-datsumou-zenpan-2" value="2" v-model="answer.constitution_"><label for="4-constitution-datsumou-zenpan-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">毛が濃い</th>
-                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-0" value="0"><label for="4-constitution-kegakoi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-1" value="1"><label for="4-constitution-kegakoi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-2" value="2"><label for="4-constitution-kegakoi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kegakoi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kegakoi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kegakoi" id="4-constitution-kegakoi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kegakoi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">白毛（毛が白い）</th>
-                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-0" value="0"><label for="4-constitution-hakumou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-1" value="1"><label for="4-constitution-hakumou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-2" value="2"><label for="4-constitution-hakumou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hakumou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hakumou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hakumou" id="4-constitution-hakumou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hakumou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">ふけ</th>
-                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-0" value="0"><label for="4-constitution-fuke-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-1" value="1"><label for="4-constitution-fuke-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-2" value="2"><label for="4-constitution-fuke-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-0" value="0" v-model="answer.constitution_"><label for="4-constitution-fuke-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-1" value="1" v-model="answer.constitution_"><label for="4-constitution-fuke-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-fuke" id="4-constitution-fuke-2" value="2" v-model="answer.constitution_"><label for="4-constitution-fuke-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">いぼ</th>
-                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-0" value="0"><label for="4-constitution-ibo-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-1" value="1"><label for="4-constitution-ibo-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-2" value="2"><label for="4-constitution-ibo-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ibo-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ibo-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ibo" id="4-constitution-ibo-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ibo-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">爪がもろい</th>
-                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-0" value="0"><label for="4-constitution-tsumemoroi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-1" value="1"><label for="4-constitution-tsumemoroi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-2" value="2"><label for="4-constitution-tsumemoroi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tsumemoroi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tsumemoroi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsumemoroi" id="4-constitution-tsumemoroi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tsumemoroi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">爪の異常</th>
-                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-0" value="0"><label for="4-constitution-tsumeijou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-1" value="1"><label for="4-constitution-tsumeijou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-2" value="2"><label for="4-constitution-tsumeijou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-tsumeijou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-tsumeijou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-tsumeijou" id="4-constitution-tsumeijou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-tsumeijou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">手術の傷あとの痛み</th>
-                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-0" value="0"><label for="4-constitution-shujutuato-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-1" value="1"><label for="4-constitution-shujutuato-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-2" value="2"><label for="4-constitution-shujutuato-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shujutuato-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shujutuato-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shujutuato" id="4-constitution-shujutuato-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shujutuato-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">皮膚が化膿しやすい</th>
-                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-0" value="0"><label for="4-constitution-hihukanou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-1" value="1"><label for="4-constitution-hihukanou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-2" value="2"><label for="4-constitution-hihukanou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hihukanou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hihukanou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hihukanou" id="4-constitution-hihukanou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hihukanou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">ケロイドになりやすい</th>
-                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-0" value="0"><label for="4-constitution-keroido-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-1" value="1"><label for="4-constitution-keroido-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-2" value="2"><label for="4-constitution-keroido-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-0" value="0" v-model="answer.constitution_"><label for="4-constitution-keroido-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-1" value="1" v-model="answer.constitution_"><label for="4-constitution-keroido-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-keroido" id="4-constitution-keroido-2" value="2" v-model="answer.constitution_"><label for="4-constitution-keroido-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1751,65 +1751,65 @@
                         <tr>
                             <th></th>
                             <th>腰</th>
-                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-0" value="0"><label for="4-constitution-itami-koshi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-1" value="1"><label for="4-constitution-itami-koshi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-2" value="2"><label for="4-constitution-itami-koshi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-koshi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-koshi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-koshi" id="4-constitution-itami-koshi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-koshi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>肩</th>
-                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-0" value="0"><label for="4-constitution-itami-kata-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-1" value="1"><label for="4-constitution-itami-kata-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-2" value="2"><label for="4-constitution-itami-kata-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-kata-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-kata-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-kata" id="4-constitution-itami-kata-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-kata-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>背</th>
-                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-0" value="0"><label for="4-constitution-itami-se-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-1" value="1"><label for="4-constitution-itami-se-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-2" value="2"><label for="4-constitution-itami-se-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-se-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-se-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-se" id="4-constitution-itami-se-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-se-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膝</th>
-                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-0" value="0"><label for="4-constitution-itami-hiza-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-1" value="1"><label for="4-constitution-itami-hiza-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-2" value="2"><label for="4-constitution-itami-hiza-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-hiza-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-hiza-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hiza" id="4-constitution-itami-hiza-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-hiza-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-0" value="0"><label for="4-constitution-itami-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-1" value="1"><label for="4-constitution-itami-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-2" value="2"><label for="4-constitution-itami-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ude" id="4-constitution-itami-ude-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>手指</th>
-                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-0" value="0"><label for="4-constitution-itami-shushi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-1" value="1"><label for="4-constitution-itami-shushi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-2" value="2"><label for="4-constitution-itami-shushi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-shushi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-shushi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-shushi" id="4-constitution-itami-shushi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-shushi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>太腿</th>
-                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-0" value="0"><label for="4-constitution-itami-hutomomo-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-1" value="1"><label for="4-constitution-itami-hutomomo-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-2" value="2"><label for="4-constitution-itami-hutomomo-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-hutomomo-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-hutomomo-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-hutomomo" id="4-constitution-itami-hutomomo-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-hutomomo-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-0" value="0"><label for="4-constitution-itami-ashi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-1" value="1"><label for="4-constitution-itami-ashi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-2" value="2"><label for="4-constitution-itami-ashi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-ashi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-ashi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-ashi" id="4-constitution-itami-ashi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-ashi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-0" value="0"><label for="4-constitution-itami-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-1" value="1"><label for="4-constitution-itami-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-2" value="2"><label for="4-constitution-itami-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-itami-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-itami-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-itami-other" id="4-constitution-itami-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-itami-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">こわばり</th>
@@ -1817,16 +1817,16 @@
                         <tr>
                             <th></th>
                             <th>手指</th>
-                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-0" value="0"><label for="4-constitution-kowabari-shushi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-1" value="1"><label for="4-constitution-kowabari-shushi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-2" value="2"><label for="4-constitution-kowabari-shushi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kowabari-shushi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kowabari-shushi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-shushi" id="4-constitution-kowabari-shushi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kowabari-shushi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-0" value="0"><label for="4-constitution-kowabari-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-1" value="1"><label for="4-constitution-kowabari-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-2" value="2"><label for="4-constitution-kowabari-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kowabari-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kowabari-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kowabari-other" id="4-constitution-kowabari-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kowabari-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">こり</th>
@@ -1834,43 +1834,43 @@
                         <tr>
                             <th></th>
                             <th>肩</th>
-                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-0" value="0"><label for="4-constitution-kori-kata-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-1" value="1"><label for="4-constitution-kori-kata-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-2" value="2"><label for="4-constitution-kori-kata-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kori-kata-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kori-kata-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kori-kata" id="4-constitution-kori-kata-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kori-kata-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>背</th>
-                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-0" value="0"><label for="4-constitution-kori-se-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-1" value="1"><label for="4-constitution-kori-se-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-2" value="2"><label for="4-constitution-kori-se-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kori-se-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kori-se-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kori-se" id="4-constitution-kori-se-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kori-se-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>首筋</th>
-                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-0" value="0"><label for="4-constitution-kori-sesuji-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-1" value="1"><label for="4-constitution-kori-sesuji-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-2" value="2"><label for="4-constitution-kori-sesuji-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kori-sesuji-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kori-sesuji-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kori-sesuji" id="4-constitution-kori-sesuji-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kori-sesuji-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>腰</th>
-                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-0" value="0"><label for="4-constitution-kori-koshi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-1" value="1"><label for="4-constitution-kori-koshi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-2" value="2"><label for="4-constitution-kori-koshi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kori-koshi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kori-koshi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kori-koshi" id="4-constitution-kori-koshi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kori-koshi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-0" value="0"><label for="4-constitution-kori-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-1" value="1"><label for="4-constitution-kori-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-2" value="2"><label for="4-constitution-kori-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kori-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kori-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kori-other" id="4-constitution-kori-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kori-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">張り</th>
-                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-0" value="0"><label for="4-constitution-hari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-1" value="1"><label for="4-constitution-hari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-2" value="2"><label for="4-constitution-hari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hari" id="4-constitution-hari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">腫れ</th>
@@ -1878,30 +1878,30 @@
                         <tr>
                             <th></th>
                             <th>膝</th>
-                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-0" value="0"><label for="4-constitution-hare-hiza-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-1" value="1"><label for="4-constitution-hare-hiza-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-2" value="2"><label for="4-constitution-hare-hiza-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hare-hiza-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hare-hiza-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiza" id="4-constitution-hare-hiza-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hare-hiza-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>肘</th>
-                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-0" value="0"><label for="4-constitution-hare-hiji-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-1" value="1"><label for="4-constitution-hare-hiji-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-2" value="2"><label for="4-constitution-hare-hiji-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hare-hiji-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hare-hiji-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hare-hiji" id="4-constitution-hare-hiji-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hare-hiji-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>手首</th>
-                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-0" value="0"><label for="4-constitution-hare-tekubi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-1" value="1"><label for="4-constitution-hare-tekubi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-2" value="2"><label for="4-constitution-hare-tekubi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hare-tekubi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hare-tekubi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hare-tekubi" id="4-constitution-hare-tekubi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hare-tekubi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-0" value="0"><label for="4-constitution-hare-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-1" value="1"><label for="4-constitution-hare-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-2" value="2"><label for="4-constitution-hare-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hare-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hare-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hare-other" id="4-constitution-hare-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hare-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">しびれ</th>
@@ -1909,37 +1909,37 @@
                         <tr>
                             <th></th>
                             <th>腕</th>
-                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-0" value="0"><label for="4-constitution-shibire-ude-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-1" value="1"><label for="4-constitution-shibire-ude-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-2" value="2"><label for="4-constitution-shibire-ude-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shibire-ude-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shibire-ude-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-ude" id="4-constitution-shibire-ude-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shibire-ude-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>手指</th>
-                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-0" value="0"><label for="4-constitution-shibire-shushi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-1" value="1"><label for="4-constitution-shibire-shushi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-2" value="2"><label for="4-constitution-shibire-shushi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shibire-shushi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shibire-shushi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shushi" id="4-constitution-shibire-shushi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shibire-shushi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>太腿</th>
-                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-0" value="0"><label for="4-constitution-shibire-futomomo-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-1" value="1"><label for="4-constitution-shibire-futomomo-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-2" value="2"><label for="4-constitution-shibire-futomomo-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shibire-futomomo-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shibire-futomomo-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-futomomo" id="4-constitution-shibire-futomomo-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shibire-futomomo-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足</th>
-                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-0" value="0"><label for="4-constitution-shibire-shi-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-1" value="1"><label for="4-constitution-shibire-shi-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-2" value="2"><label for="4-constitution-shibire-shi-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shibire-shi-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shibire-shi-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-shi" id="4-constitution-shibire-shi-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shibire-shi-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-0" value="0"><label for="4-constitution-shibire-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-1" value="1"><label for="4-constitution-shibire-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-2" value="2"><label for="4-constitution-shibire-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shibire-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shibire-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shibire-other" id="4-constitution-shibire-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shibire-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">ほてり</th>
@@ -1947,59 +1947,59 @@
                         <tr>
                             <th></th>
                             <th>手のひら</th>
-                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-0" value="0"><label for="4-constitution-hoteri-tenohira-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-1" value="1"><label for="4-constitution-hoteri-tenohira-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-2" value="2"><label for="4-constitution-hoteri-tenohira-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hoteri-tenohira-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hoteri-tenohira-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-tenohira" id="4-constitution-hoteri-tenohira-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hoteri-tenohira-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>足の裏</th>
-                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-0" value="0"><label for="4-constitution-hoteri-ashiura-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-1" value="1"><label for="4-constitution-hoteri-ashiura-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-2" value="2"><label for="4-constitution-hoteri-ashiura-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hoteri-ashiura-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hoteri-ashiura-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-ashiura" id="4-constitution-hoteri-ashiura-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hoteri-ashiura-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他の部位</th>
-                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-0" value="0"><label for="4-constitution-hoteri-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-1" value="1"><label for="4-constitution-hoteri-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-2" value="2"><label for="4-constitution-hoteri-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hoteri-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hoteri-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hoteri-other" id="4-constitution-hoteri-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hoteri-other-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">神経痛</th>
-                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-0" value="0"><label for="4-constitution-shinkeitsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-1" value="1"><label for="4-constitution-shinkeitsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-2" value="2"><label for="4-constitution-shinkeitsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shinkeitsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shinkeitsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shinkeitsu" id="4-constitution-shinkeitsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shinkeitsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">足がつりやすい</th>
-                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-0" value="0"><label for="4-constitution-ashitsuru-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-1" value="1"><label for="4-constitution-ashitsuru-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-2" value="2"><label for="4-constitution-ashitsuru-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ashitsuru-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ashitsuru-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ashitsuru" id="4-constitution-ashitsuru-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ashitsuru-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">筋力低下</th>
-                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-0" value="0"><label for="4-constitution-kinryokuteika-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-1" value="1"><label for="4-constitution-kinryokuteika-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-2" value="2"><label for="4-constitution-kinryokuteika-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kinryokuteika-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kinryokuteika-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kinryokuteika" id="4-constitution-kinryokuteika-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kinryokuteika-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">間欠性跛行</th>
-                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-0" value="0"><label for="4-constitution-kanketsuseihakou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-1" value="1"><label for="4-constitution-kanketsuseihakou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-2" value="2"><label for="4-constitution-kanketsuseihakou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kanketsuseihakou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kanketsuseihakou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kanketsuseihakou" id="4-constitution-kanketsuseihakou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kanketsuseihakou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">運動障害（運動に制限がある）</th>
-                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-0" value="0"><label for="4-constitution-undoushougai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-1" value="1"><label for="4-constitution-undoushougai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-2" value="2"><label for="4-constitution-undoushougai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-undoushougai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-undoushougai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-undoushougai" id="4-constitution-undoushougai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-undoushougai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">打撲</th>
-                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-0" value="0"><label for="4-constitution-daboku-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-1" value="1"><label for="4-constitution-daboku-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-2" value="2"><label for="4-constitution-daboku-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-0" value="0" v-model="answer.constitution_"><label for="4-constitution-daboku-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-1" value="1" v-model="answer.constitution_"><label for="4-constitution-daboku-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-daboku" id="4-constitution-daboku-2" value="2" v-model="answer.constitution_"><label for="4-constitution-daboku-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -2010,33 +2010,33 @@
                     <tbody>
                         <tr>
                             <th colspan="2">不妊</th>
-                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-0" value="0"><label for="4-constitution-hinin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-1" value="1"><label for="4-constitution-hinin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-2" value="2"><label for="4-constitution-hinin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hinin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hinin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hinin" id="4-constitution-hinin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hinin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">胎位異常</th>
-                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-0" value="0"><label for="4-constitution-taiiijou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-1" value="1"><label for="4-constitution-taiiijou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-2" value="2"><label for="4-constitution-taiiijou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-taiiijou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-taiiijou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-taiiijou" id="4-constitution-taiiijou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-taiiijou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">子宮脱</th>
-                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-0" value="0"><label for="4-constitution-shikyuudatsu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-1" value="1"><label for="4-constitution-shikyuudatsu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-2" value="2"><label for="4-constitution-shikyuudatsu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-shikyuudatsu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-shikyuudatsu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-shikyuudatsu" id="4-constitution-shikyuudatsu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-shikyuudatsu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">性交痛</th>
-                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-0" value="0"><label for="4-constitution-seikoutsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-1" value="1"><label for="4-constitution-seikoutsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-2" value="2"><label for="4-constitution-seikoutsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-seikoutsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-seikoutsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-seikoutsuu" id="4-constitution-seikoutsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-seikoutsuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">乳房の張り</th>
-                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-0" value="0"><label for="4-constitution-chibusahari-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-1" value="1"><label for="4-constitution-chibusahari-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-2" value="2"><label for="4-constitution-chibusahari-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-0" value="0" v-model="answer.constitution_"><label for="4-constitution-chibusahari-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-1" value="1" v-model="answer.constitution_"><label for="4-constitution-chibusahari-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-chibusahari" id="4-constitution-chibusahari-2" value="2" v-model="answer.constitution_"><label for="4-constitution-chibusahari-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="5">帯下の異常</th>
@@ -2044,23 +2044,23 @@
                         <tr>
                             <th></th>
                             <th>血性</th>
-                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-0" value="0"><label for="4-constitution-obishita-kessei-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-1" value="1"><label for="4-constitution-obishita-kessei-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-2" value="2"><label for="4-constitution-obishita-kessei-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-0" value="0" v-model="answer.constitution_"><label for="4-constitution-obishita-kessei-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-1" value="1" v-model="answer.constitution_"><label for="4-constitution-obishita-kessei-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-kessei" id="4-constitution-obishita-kessei-2" value="2" v-model="answer.constitution_"><label for="4-constitution-obishita-kessei-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>膿性</th>
-                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-0" value="0"><label for="4-constitution-obishita-nousei-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-1" value="1"><label for="4-constitution-obishita-nousei-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-2" value="2"><label for="4-constitution-obishita-nousei-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-0" value="0" v-model="answer.constitution_"><label for="4-constitution-obishita-nousei-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-1" value="1" v-model="answer.constitution_"><label for="4-constitution-obishita-nousei-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-nousei" id="4-constitution-obishita-nousei-2" value="2" v-model="answer.constitution_"><label for="4-constitution-obishita-nousei-2">◎</label></td>
                         </tr>
                         <tr>
                             <th></th>
                             <th>その他</th>
-                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-0" value="0"><label for="4-constitution-obishita-other-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-1" value="1"><label for="4-constitution-obishita-other-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-2" value="2"><label for="4-constitution-obishita-other-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-0" value="0" v-model="answer.constitution_"><label for="4-constitution-obishita-other-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-1" value="1" v-model="answer.constitution_"><label for="4-constitution-obishita-other-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-obishita-other" id="4-constitution-obishita-other-2" value="2" v-model="answer.constitution_"><label for="4-constitution-obishita-other-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
@@ -2071,87 +2071,87 @@
                     <tbody>
                         <tr>
                             <th colspan="2">頻尿（昼間）</th>
-                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-0" value="0"><label for="4-constitution-hinnyou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-1" value="1"><label for="4-constitution-hinnyou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-2" value="2"><label for="4-constitution-hinnyou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-hinnyou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-hinnyou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-hinnyou" id="4-constitution-hinnyou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-hinnyou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">夜間頻尿</th>
-                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-0" value="0"><label for="4-constitution-yakanhinnyou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-1" value="1"><label for="4-constitution-yakanhinnyou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-2" value="2"><label for="4-constitution-yakanhinnyou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-yakanhinnyou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-yakanhinnyou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-yakanhinnyou" id="4-constitution-yakanhinnyou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-yakanhinnyou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">尿失禁</th>
-                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-0" value="0"><label for="4-constitution-nyoushikkin-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-1" value="1"><label for="4-constitution-nyoushikkin-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-2" value="2"><label for="4-constitution-nyoushikkin-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyoushikkin-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyoushikkin-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyoushikkin" id="4-constitution-nyoushikkin-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyoushikkin-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">夜尿症</th>
-                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-0" value="0"><label for="4-constitution-yanyoushou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-1" value="1"><label for="4-constitution-yanyoushou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-2" value="2"><label for="4-constitution-yanyoushou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-yanyoushou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-yanyoushou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-yanyoushou" id="4-constitution-yanyoushou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-yanyoushou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">尿が濁っている</th>
-                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-0" value="0"><label for="4-constitution-nyounigori-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-1" value="1"><label for="4-constitution-nyounigori-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-2" value="2"><label for="4-constitution-nyounigori-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyounigori-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyounigori-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyounigori" id="4-constitution-nyounigori-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyounigori-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">血尿</th>
-                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-0" value="0"><label for="4-constitution-ketsunyou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-1" value="1"><label for="4-constitution-ketsunyou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-2" value="2"><label for="4-constitution-ketsunyou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-ketsunyou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-ketsunyou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-ketsunyou" id="4-constitution-ketsunyou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-ketsunyou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">尿量減少</th>
-                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-0" value="0"><label for="4-constitution-nyouryougenshou-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-1" value="1"><label for="4-constitution-nyouryougenshou-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-2" value="2"><label for="4-constitution-nyouryougenshou-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyouryougenshou-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyouryougenshou-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyouryougenshou" id="4-constitution-nyouryougenshou-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyouryougenshou-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">水を飲む割に尿が少ない</th>
-                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-0" value="0"><label for="4-constitution-nyousukunai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-1" value="1"><label for="4-constitution-nyousukunai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-2" value="2"><label for="4-constitution-nyousukunai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyousukunai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyousukunai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyousukunai" id="4-constitution-nyousukunai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyousukunai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">尿の出が悪い（すっきり出ない）</th>
-                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-0" value="0"><label for="4-constitution-nyoudenikui-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-1" value="1"><label for="4-constitution-nyoudenikui-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-2" value="2"><label for="4-constitution-nyoudenikui-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyoudenikui-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyoudenikui-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenikui" id="4-constitution-nyoudenikui-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyoudenikui-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">尿閉（尿が出ない）</th>
-                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-0" value="0"><label for="4-constitution-nyoudenai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-1" value="1"><label for="4-constitution-nyoudenai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-2" value="2"><label for="4-constitution-nyoudenai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-nyoudenai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-nyoudenai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-nyoudenai" id="4-constitution-nyoudenai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-nyoudenai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">性機能の減退</th>
-                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-0" value="0"><label for="4-constitution-seikinougentai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-1" value="1"><label for="4-constitution-seikinougentai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-2" value="2"><label for="4-constitution-seikinougentai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-seikinougentai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-seikinougentai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-seikinougentai" id="4-constitution-seikinougentai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-seikinougentai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">会陰部（股間）の不快感</th>
-                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-0" value="0"><label for="4-constitution-einbufukai-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-1" value="1"><label for="4-constitution-einbufukai-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-2" value="2"><label for="4-constitution-einbufukai-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-0" value="0" v-model="answer.constitution_"><label for="4-constitution-einbufukai-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-1" value="1" v-model="answer.constitution_"><label for="4-constitution-einbufukai-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-einbufukai" id="4-constitution-einbufukai-2" value="2" v-model="answer.constitution_"><label for="4-constitution-einbufukai-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">会陰部痛</th>
-                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-0" value="0"><label for="4-constitution-einbutsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-1" value="1"><label for="4-constitution-einbutsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-2" value="2"><label for="4-constitution-einbutsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-einbutsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-einbutsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-einbutsuu" id="4-constitution-einbutsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-einbutsuu-2">◎</label></td>
                         </tr>
                         <tr>
                             <th colspan="2">睾丸痛</th>
-                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-0" value="0"><label for="4-constitution-kougantsuu-0">×</label></td>
-                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-1" value="1"><label for="4-constitution-kougantsuu-1">〇</label></td>
-                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-2" value="2"><label for="4-constitution-kougantsuu-2">◎</label></td>
+                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-0" value="0" v-model="answer.constitution_"><label for="4-constitution-kougantsuu-0">×</label></td>
+                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-1" value="1" v-model="answer.constitution_"><label for="4-constitution-kougantsuu-1">〇</label></td>
+                            <td><input type="radio" name="4-constitution-kougantsuu" id="4-constitution-kougantsuu-2" value="2" v-model="answer.constitution_"><label for="4-constitution-kougantsuu-2">◎</label></td>
                         </tr>
                     </tbody>
                 </table>
